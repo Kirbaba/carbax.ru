@@ -90,8 +90,7 @@ ul {
         -o-border-image: -o-linear-gradient(left, black, rgba(0, 0, 0, 0.5)) 1 100%;
         border-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.5)) 1 100%; }
         .header__leftSide__menu a:hover, .header__rightSide__menu a:hover {
-          background-color: #dadada;
-          background-image: linear-gradient(bottom, #3e3e3e 0%, #262626 100%); }
+          background-image: linear-gradient(to bottom, #3e3e3e, #dadada); }
           .header__leftSide__menu a:hover .header__leftSide__menu__write, .header__rightSide__menu a:hover .header__leftSide__menu__write {
             background-image: url("../img/Note-1.png"); }
           .header__leftSide__menu a:hover .header__leftSide__menu__squares, .header__rightSide__menu a:hover .header__leftSide__menu__squares {

@@ -25,8 +25,8 @@
 				border-width: 0 3px 0 0;
 				@include HeaderBord();
 				&:hover {
-					background-color: #dadada;
-					background-image: linear-gradient(bottom, #3e3e3e 0%, #262626 100%);
+					background-image: linear-gradient(to bottom, #3e3e3e, #dadada);
+					
 					.header__leftSide__menu__write {
 						background-image: url("../img/Note-1.png");
 					}
