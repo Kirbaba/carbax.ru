@@ -1,0 +1,15 @@
+a.example-image-link {
+	display: inline-block;
+	position: relative;
+	width: 330px;
+	height: 330px;
+	border: 1px solid #272727;
+	margin: 15px;
+}
+
+a.example-image-link img {
+	margin: 0 auto;
+	max-width: 90%;
+	display: block;
+	position: relative;
+}

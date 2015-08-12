@@ -1,0 +1,165 @@
+/* font-family: "LatoRegular"; */
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/LatoRegular/LatoRegular.eot");
+  src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "LatoBold"; */
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/LatoBold/LatoBold.eot");
+  src: url("../fonts/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold/LatoBold.woff") format("woff"), url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "LatoLight"; */
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/LatoLight/LatoLight.eot");
+  src: url("../fonts/LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLight/LatoLight.woff") format("woff"), url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff;
+  min-width: 1167px;
+  font-family: "LatoLight"; }
+
+.contain {
+  width: 1167px;
+  padding: 0 15px;
+  display: block;
+  margin: 0 auto;
+  position: relative; }
+  .contain:before, .contain:after {
+    display: table;
+    content: " "; }
+  .contain:after {
+    clear: both; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: none;
+    text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+.blockTitle {
+  text-align: center;
+  font-family: 'Calibri';
+  font-weight: bold;
+  font-size: 50px; }
+
+.header {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 70px;
+  background-color: #1b1b1b; }
+  .header__leftSide {
+    display: block;
+    float: left;
+    position: relative;
+    height: 100%;
+    margin-left: 30px; }
+    .header__leftSide__menu, .header__rightSide__menu {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      position: relative;
+      font-family: "LatoRegular"; }
+      .header__leftSide__menu a, .header__rightSide__menu a {
+        display: block;
+        float: left;
+        position: relative;
+        line-height: 70px;
+        color: #fff;
+        border-width: 0 3px 0 0;
+        border-style: solid;
+        -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(black), to(rgba(0, 0, 0, 0.5))) 1 100%;
+        -webkit-border-image: -webkit-linear-gradient(left, black, rgba(0, 0, 0, 0.5)) 1 100%;
+        -moz-border-image: -moz-linear-gradient(left, black, rgba(0, 0, 0, 0.5)) 1 100%;
+        -o-border-image: -o-linear-gradient(left, black, rgba(0, 0, 0, 0.5)) 1 100%;
+        border-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.5)) 1 100%; }
+        .header__leftSide__menu a:hover, .header__rightSide__menu a:hover {
+          background-color: #dadada;
+          background-image: linear-gradient(bottom, #3e3e3e 0%, #262626 100%); }
+          .header__leftSide__menu a:hover .header__leftSide__menu__write, .header__rightSide__menu a:hover .header__leftSide__menu__write {
+            background-image: url("../img/Note-1.png"); }
+          .header__leftSide__menu a:hover .header__leftSide__menu__squares, .header__rightSide__menu a:hover .header__leftSide__menu__squares {
+            background-image: url("../img/Grid-1.png"); }
+        .header__leftSide__menu a li, .header__rightSide__menu a li {
+          display: inline-block;
+          padding: 0 15px;
+          line-height: normal;
+          vertical-align: middle;
+          font-size: 13px; }
+          .header__leftSide__menu a li i, .header__rightSide__menu a li i {
+            display: inline-block;
+            background-position: center;
+            background-repeat: no-repeat;
+            vertical-align: middle; }
+      .header__leftSide__menu__write {
+        width: 22px;
+        height: 22px;
+        background-image: url("../img/Note.png"); }
+      .header__leftSide__menu__squares {
+        width: 21px;
+        height: 21px;
+        background-image: url("../img/Grid.png"); }
+      .header__leftSide__menu__vip {
+        text-transform: lowercase;
+        font-style: normal;
+        margin-left: 10px;
+        padding: 2px 10px;
+        color: #fff;
+        font-style: 13px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
+        -o-background-clip: padding-box;
+        background-clip: padding-box;
+        background-color: #ff6b00; }
+  .header__rightSide {
+    display: block;
+    float: right;
+    margin-right: 30px; }
+    .header__rightSide__menu a {
+      border-width: 0 0 0 3px; }
+      .header__rightSide__menu a:hover .header__rightSide__menu__mail {
+        background-image: url("../img/mail-1.png"); }
+      .header__rightSide__menu a:hover .header__rightSide__menu__goods {
+        background-image: url("../img/Trazado-compuesto-1.png"); }
+      .header__rightSide__menu a:hover .header__rightSide__menu__stock {
+        background-image: url("../img/Tag-1.png"); }
+      .header__rightSide__menu a:hover .header__rightSide__menu__logout {
+        background-image: url("../img/Logout.png"); }
+      .header__rightSide__menu a li span {
+        color: #ff6b00; }
+    .header__rightSide__menu__mail {
+      width: 28px;
+      height: 21px;
+      background-image: url("../img/mail.png"); }
+    .header__rightSide__menu__goods {
+      width: 22px;
+      height: 21px;
+      margin-right: 15px;
+      background-image: url("../img/Trazado-compuesto.png"); }
+    .header__rightSide__menu__stock {
+      width: 23px;
+      height: 23px;
+      margin-right: 15px;
+      background-image: url("../img/Tag.png"); }
+    .header__rightSide__menu__logout {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/Logout-3.png"); }
+
+/*# sourceMappingURL=style.css.map */

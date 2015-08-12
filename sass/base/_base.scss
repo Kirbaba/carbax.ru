@@ -1,0 +1,44 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #fff;
+	min-width: 1167px;
+	font-family: $l;
+}
+
+.contain {
+	width: 1167px;
+	padding: 0 15px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	&:before,
+	&:after{		
+		display: table;
+  		content: " ";
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+a {
+	text-decoration: none;
+	&:hover, &:focus, &:active{
+		outline: none;
+		text-decoration: none;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+
+.blockTitle {
+	text-align: center;
+	font-family: 'Calibri';
+	font-weight: bold;
+	font-size: 50px;
+}
