@@ -55,11 +55,13 @@ ul {
   font-weight: bold;
   font-size: 50px; }
 
+.orange {
+  color: #ff6b00; }
+
 .header {
   display: block;
   position: relative;
   width: 100%;
-  float: left;
   height: 70px;
   background-color: #1b1b1b; }
   .header__leftSide {
@@ -161,5 +163,75 @@ ul {
       width: 24px;
       height: 24px;
       background-image: url("../img/Logout-3.png"); }
+
+.first {
+  display: block;
+  position: relative;
+  padding: 175px 0 200px;
+  background-image: url("../img/SLIDER-IMAGE.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-size: cover; }
+  .first:after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: -54px;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    border-left: 0;
+    z-index: 1; }
+  .first__title {
+    display: block;
+    width: 551px;
+    position: relative;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0 20px 10px; }
+    .first__title__logo {
+      display: inline-block;
+      width: 20%; }
+      .first__title__logo img {
+        display: block;
+        width: 91px;
+        height: 91px; }
+    .first__title__desc {
+      display: inline-block;
+      width: 75%; }
+      .first__title__desc h1 {
+        color: #fff;
+        font-size: 75px;
+        display: block;
+        font-family: "Calibri";
+        text-align: center;
+        font-weight: bold;
+        border-bottom: 1px solid #fff;
+        margin: 0; }
+      .first__title__desc p {
+        margin: 5px 0 0;
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        font-family: "LatoRegular"; }
+  .first__but {
+    display: block;
+    margin: 25px auto;
+    width: 375px; }
+    .first__but a {
+      display: inline-block;
+      background-color: #ff6b00;
+      width: 162px;
+      height: 32px;
+      color: #fff;
+      text-align: center;
+      font-family: "LatoBold";
+      margin: 0 10px;
+      line-height: 32px; }
+      .first__but a:hover, .first__but a:active .first__but a:focus {
+        background-color: #cc5600; }
 
 /*# sourceMappingURL=style.css.map */
