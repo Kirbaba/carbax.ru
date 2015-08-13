@@ -370,7 +370,7 @@ ul {
 .deals {
   display: block;
   position: relative;
-  padding: 50px 0; }
+  padding: 50px 0 0; }
   .deals__line {
     display: block;
     position: relative;
@@ -428,5 +428,68 @@ ul {
               filter: gray;
               /* IE 6-9 */
               opacity: 1; }
+
+.news {
+  display: block;
+  position: relative;
+  padding: 50px 0; }
+  .news:after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 0;
+    right: 0;
+    bottom: -40px;
+    margin-left: -54px;
+    border: 20px solid transparent;
+    border-top-color: #fff;
+    border-right: 0;
+    z-index: 1; }
+  .news__block {
+    display: block;
+    float: left;
+    width: 300px;
+    margin: 25px 44px;
+    overflow: hidden; }
+    .news__block img {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      width: 100%;
+      height: 200px;
+      overflow: hidden; }
+    .news__block small {
+      display: block;
+      color: #A63002; }
+    .news__block-title {
+      display: block;
+      margin: 15px 0;
+      color: #272727;
+      font-family: "LatoBold"; }
+      .news__block-title:hover {
+        color: #ff6b00; }
+    .news__block-eye, .news__block-comment {
+      color: #7d7b7b;
+      font-size: 10px;
+      display: block;
+      float: left;
+      margin-right: 10px; }
+      .news__block-eye i, .news__block-comment i {
+        background-image: url("../img/eye46.png");
+        background-repeat: no-repeat;
+        display: block;
+        float: left;
+        width: 17px;
+        height: 12px;
+        margin-right: 10px; }
+    .news__block-comment i {
+      background-image: url("../img/message30.png");
+      width: 12px;
+      height: 12px; }
+
+.map {
+  height: 500px;
+  width: 100%;
+  display: block;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
