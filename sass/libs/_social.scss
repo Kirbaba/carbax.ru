@@ -1,0 +1,38 @@
+.soc {
+  a {
+    position: relative;
+    i {
+      display: block;
+      float: left;
+      background-repeat: no-repeat;      
+    }
+  }
+  &__vk {
+    background: url("../img/Ikonki_tsve.png") 0 0;
+  }
+  &__fb {
+    background: url("../img/Ikonki_tsve.png") -23px 0;
+  }
+  &__tw {
+    background: url("../img/Ikonki_tsve.png") -47px 0;    
+  }
+  &__in {
+    background: url("../img/Ikonki_tsve.png");    
+  }
+  &__gp {
+    background: url("../img/Ikonki_tsve.png") -118px 0;
+  }
+  &__ig {
+    background: url("../img/Ikonki_tsve.png");   
+  }
+  &__ok {
+    background: url("../img/Ikonki_tsve.png") -95px 0;
+  }
+  &__yt {
+    background: url("../img/Ikonki_tsve.png");
+  }
+  &__lj {
+    background: url("../img/Ikonki_tsve.png") -72px 0;    
+  }
+
+}
