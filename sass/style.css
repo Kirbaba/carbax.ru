@@ -28,16 +28,16 @@ body {
   min-width: 1167px;
   font-family: "LatoLight"; }
 
-.contain {
+.contain, .filter__container {
   width: 1167px;
   padding: 0 15px;
   display: block;
   margin: 0 auto;
   position: relative; }
-  .contain:before, .contain:after {
+  .contain:before, .filter__container:before, .contain:after, .filter__container:after {
     display: table;
     content: " "; }
-  .contain:after {
+  .contain:after, .filter__container:after {
     clear: both; }
 
 a {
@@ -57,6 +57,9 @@ ul {
 
 .orange {
   color: #ff6b00; }
+
+.white {
+  color: #FFF; }
 
 .header {
   display: block;
@@ -232,5 +235,108 @@ ul {
       line-height: 32px; }
       .first__but a:hover, .first__but a:active .first__but a:focus {
         background-color: #cc5600; }
+
+.filter {
+  display: block;
+  position: relative;
+  padding-bottom: 50px; }
+  .filter:after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 0;
+    right: 0;
+    bottom: -40px;
+    margin-left: -54px;
+    border: 20px solid transparent;
+    border-top-color: #fff;
+    border-right: 0;
+    z-index: 1; }
+  .filter__container {
+    width: 928px; }
+    .filter__container__block {
+      display: block;
+      float: left;
+      width: 202px;
+      height: 202px;
+      background-image: url("../img/Outline-1.png");
+      background-repeat: no-repeat;
+      position: relative;
+      margin: 25px 15px;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: gray;
+      /* IE 6-9 */
+      opacity: 0.5; }
+      .filter__container__block:hover, .filter__container__block:active {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+        filter: gray;
+        /* IE 6-9 */
+        opacity: 1; }
+      .filter__container__block p {
+        text-align: center;
+        margin-top: 0;
+        font-family: "LatoRegular";
+        color: #444; }
+      .filter__container__block img {
+        display: block;
+        margin: 20px auto 0; }
+
+.whatIs {
+  display: block;
+  position: relative;
+  padding: 50px 0 100px;
+  background-image: url("../img/bg8.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .whatIs:after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: -54px;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    border-left: 0;
+    z-index: 1; }
+  .whatIs__block {
+    display: block;
+    position: relative;
+    float: left;
+    width: 50%;
+    margin: 25px 0; }
+    .whatIs__block-img {
+      display: block;
+      float: left;
+      width: 20%; }
+      .whatIs__block-img img {
+        display: block;
+        width: 96px;
+        height: 95px;
+        margin-top: 10px; }
+    .whatIs__block-text {
+      display: block;
+      float: left;
+      width: 75%;
+      padding-right: 5%;
+      color: #FFF;
+      font-family: 'Calibri'; }
+      .whatIs__block-text h3 {
+        margin: 0;
+        font-size: 32px; }
+      .whatIs__block-text p {
+        font-size: 20px;
+        margin: 0;
+        display: block;
+        margin-right: 20%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -59,7 +59,7 @@
 		width: 55%;
 		height: 0;
 		right: 0;
-		bottom: -50px;
+		bottom: -40px;
 		margin-left: -54px;
 		border: 20px solid transparent;
 		border-top-color: #fff;
@@ -80,4 +80,13 @@
 	-o-linear-gradient(left, black, rgba(0, 0, 0, 0.5)) 1 100%;
 	border-image:
 	linear-gradient(to left, black, rgba(0, 0, 0, 0.5)) 1 100%;   
+}
+
+@mixin grayscale($n) {
+	-webkit-filter: grayscale($n);
+	-moz-filter: grayscale($n);
+	-ms-filter: grayscale($n);
+	-o-filter: grayscale($n);
+	filter: grayscale($n);
+	filter: gray; /* IE 6-9 */
 }

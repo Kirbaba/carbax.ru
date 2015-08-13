@@ -67,3 +67,87 @@
 		}
 	}
 }
+
+.filter {
+	display: block;
+	position: relative;
+	padding-bottom: 50px;
+	@include after_right();
+	&__container {
+		@extend .contain;
+		width: 928px;		
+		&__block {
+			display: block;
+			float: left;
+			width: 202px;
+			height: 202px;
+			background-image: url("../img/Outline-1.png");
+			background-repeat: no-repeat;
+			position: relative;
+			margin: 25px 15px;
+			@include grayscale(100%);
+			opacity: 0.5;
+			&:hover, &:active {
+				@include grayscale(0%);
+				opacity: 1;
+			}
+			p {
+				text-align: center;
+				margin-top: 0;
+				font-family: $r;
+				color: #444;				
+			}
+			img {
+				display: block;
+				margin: 20px auto 0;
+			}
+		}
+	}
+	
+}
+
+.whatIs {
+	display: block;
+	position: relative;
+	padding: 50px 0 100px;
+	background-image: url("../img/bg8.png");
+	background-repeat: no-repeat;
+	background-position: center;
+		@include after_left();
+	&__block {
+		display: block;
+		position: relative;
+		float: left;
+		width: 50%;
+		margin: 25px 0;
+		&-img {
+			display: block;
+			float: left;
+			width: 20%;
+			img {
+				display: block;
+				width: 96px;
+				height: 95px;
+				margin-top: 10px;
+			}
+		}
+		&-text {
+			display: block;
+			float: left;
+			width: 75%;
+			padding-right: 5%;
+			color: #FFF;
+			font-family: 'Calibri';
+			h3 {
+				margin: 0;
+				font-size: 32px;
+			}
+			p {
+				font-size: 20px;
+				margin: 0;
+				display: block;
+				margin-right: 20%;
+			}
+		}
+	}
+}
