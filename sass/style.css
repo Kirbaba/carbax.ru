@@ -27,22 +27,36 @@
     background-repeat: no-repeat; }
 .soc__vk {
   background: url("../img/Ikonki_tsve.png") 0 0; }
+  .soc__vk-b {
+    background: url("../img/Ikonki_tsve.png") -2px -31px; }
 .soc__fb {
   background: url("../img/Ikonki_tsve.png") -23px 0; }
+  .soc__fb-b {
+    background: url("../img/Ikonki_tsve.png") -37px -31px; }
 .soc__tw {
   background: url("../img/Ikonki_tsve.png") -47px 0; }
+  .soc__tw-b {
+    background: url("../img/Ikonki_tsve.png") -74px -31px; }
 .soc__in {
   background: url("../img/Ikonki_tsve.png"); }
+  .soc__in-b {
+    background: url("../img/Ikonki_tsve.png") 0 0; }
 .soc__gp {
   background: url("../img/Ikonki_tsve.png") -118px 0; }
+  .soc__gp-b {
+    background: url("../img/Ikonki_tsve.png") -183px -31px; }
 .soc__ig {
   background: url("../img/Ikonki_tsve.png"); }
 .soc__ok {
   background: url("../img/Ikonki_tsve.png") -95px 0; }
+  .soc__ok-b {
+    background: url("../img/Ikonki_tsve.png") -147px -31px; }
 .soc__yt {
   background: url("../img/Ikonki_tsve.png"); }
 .soc__lj {
   background: url("../img/Ikonki_tsve.png") -72px 0; }
+  .soc__lj-b {
+    background: url("../img/Ikonki_tsve.png") -112px -31px; }
 
 html,
 body {
@@ -193,6 +207,108 @@ ul {
       width: 24px;
       height: 24px;
       background-image: url("../img/Logout-3.png"); }
+
+.footer {
+  display: block;
+  position: relative;
+  background-color: #272727;
+  padding: 50px 0; }
+  .footer__logo {
+    display: block;
+    position: relative;
+    float: left;
+    width: 40%;
+    margin-top: 25px; }
+    .footer__logo-img {
+      width: 20%;
+      display: block;
+      float: left; }
+      .footer__logo-img img {
+        width: 68px;
+        height: 68px; }
+    .footer__logo-desc {
+      width: 80%;
+      display: block;
+      float: left;
+      font-family: "Calibri"; }
+      .footer__logo-desc h1 {
+        font-size: 47px;
+        margin: 0;
+        color: #fff;
+        line-height: 42px; }
+      .footer__logo-desc p {
+        color: #9a9a9a;
+        font-size: 18px;
+        margin: 0;
+        padding-left: 2px; }
+  .footer__nav {
+    display: block;
+    float: left;
+    position: relative;
+    width: 20%; }
+    .footer__nav-autoteh, .footer__nav-about {
+      font-size: 14px;
+      color: #909090;
+      display: block;
+      float: left;
+      padding-left: 0;
+      margin: 0;
+      width: 50%; }
+      .footer__nav-autoteh li, .footer__nav-about li {
+        margin-bottom: 5px; }
+        .footer__nav-autoteh li a, .footer__nav-about li a {
+          color: #909090; }
+          .footer__nav-autoteh li a:hover, .footer__nav-about li a:hover {
+            font-family: "LatoRegular";
+            color: #fff; }
+      .footer__nav-autoteh span, .footer__nav-about span {
+        font-family: "LatoRegular";
+        margin: 0 0 10px;
+        color: #FFF;
+        display: block; }
+      .footer__nav-autoteh .orange, .footer__nav-about .orange {
+        color: #ff6b00; }
+  .footer__contacts {
+    text-align: right;
+    color: #FFF;
+    display: block;
+    position: relative;
+    float: left;
+    width: 40%; }
+    .footer__contacts h3 {
+      margin: 0;
+      font-size: 36px;
+      font-family: "LatoRegular"; }
+    .footer__contacts .soc {
+      float: right;
+      margin-top: 25px; }
+      .footer__contacts .soc a i {
+        background-size: 695%;
+        margin-left: 10px;
+        width: 31px;
+        height: 31px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        border-radius: 16px;
+        background-color: #3f3f3f;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+        /* IE 6-9 */
+        opacity: 0.5; }
+        .footer__contacts .soc a i:hover, .footer__contacts .soc a i:active {
+          -webkit-filter: grayscale(0%);
+          -moz-filter: grayscale(0%);
+          -ms-filter: grayscale(0%);
+          -o-filter: grayscale(0%);
+          filter: grayscale(0%);
+          filter: gray;
+          /* IE 6-9 */
+          opacity: 1; }
 
 .first {
   display: block;

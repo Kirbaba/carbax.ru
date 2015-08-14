@@ -10,12 +10,13 @@ function initialize() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel: false
     };
-    var map = new google.maps.Map(document.getElementById("map_canvas"),
-        mapOptions);
-    var marker = new google.maps.Marker({
-        position: myLatlng,
+     var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);    
+    var image = document.location + '/img/service_icon.png';
+    var myLatLng = new google.maps.LatLng(55.662561,37.540873);
+    var beachMarker = new google.maps.Marker({
+        position: myLatLng,
         map: map,
-        title:"Ditlogistic"
+        icon: image
     });
 }
 

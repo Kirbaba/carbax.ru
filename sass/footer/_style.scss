@@ -1,0 +1,113 @@
+.footer {
+	display: block;
+	position: relative;
+	background-color: #272727;
+	padding: 50px 0;	
+	&__logo {
+		display: block;
+		position: relative;
+		float: left;
+		width: 40%;
+		margin-top: 25px;
+		&-img {
+			width: 20%;
+			display: block;
+			float: left;
+			img {
+				width: 68px;
+				height: 68px;
+			}
+		}
+		&-desc {
+			width: 80%;
+			display: block;
+			float: left;
+			font-family: "Calibri";
+			h1 {
+				font-size: 47px;
+				margin: 0;
+				color: #fff;
+				line-height: 42px;
+			}
+			p {
+				color: #9a9a9a;
+				font-size: 18px;
+				margin: 0;
+				padding-left: 2px;
+			}
+		}
+	}
+	&__nav {
+		display: block;
+		float: left;
+		position: relative;
+		width: 20%;
+		&-autoteh {
+			font-size: 14px;
+			color: #909090;
+			display: block;
+			float: left;
+			padding-left: 0;
+			margin: 0;
+			width: 50%;
+			li {
+				margin-bottom: 5px;				
+				a {
+					color: #909090;
+					&:hover {
+						font-family: $r;
+						color: #fff;
+					}
+				}
+			}
+			span {
+				font-family: $r;
+				margin: 0 0 10px;
+				color: #FFF;
+				display: block;
+			}
+			.orange {
+				color: $o;
+			}
+		}
+		&-about {
+			@extend .footer__nav-autoteh;
+		}
+	}
+
+	&__contacts {
+		text-align: right;
+		color: #FFF;
+		display: block;
+		position: relative;
+		float: left;
+		width: 40%;
+		h3 {
+			margin: 0;
+			font-size: 36px;
+			font-family: $r;
+		}
+		.soc {
+			float: right;
+			margin-top: 25px;
+			a {
+				i {
+					background-size: 695%;
+					margin-left: 10px;
+					width: 31px;
+					height: 31px;
+					@include border-radius(16px);					
+					background-color: #3f3f3f;
+					
+
+					@include grayscale(100%);
+					opacity: 0.5;
+					&:hover, &:active {
+						@include grayscale(0%);
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
