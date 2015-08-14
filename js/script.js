@@ -3,15 +3,15 @@
 
 function initialize() {
 
-    var myLatlng = new google.maps.LatLng(59.934602, 30.334607);
+    var myLatlng = new google.maps.LatLng(55.662561,37.540873);
     var mapOptions = {
-        center: new google.maps.LatLng(59.934602, 30.334607),
+        center: new google.maps.LatLng(55.662561,37.540873),
         zoom: 17,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel: false
     };
-     var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);    
-    var image = document.location + '/img/service_icon.png';
+    var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);    
+    var image = '../img/service_icon.png';
     var myLatLng = new google.maps.LatLng(55.662561,37.540873);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
