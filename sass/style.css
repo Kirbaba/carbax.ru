@@ -608,4 +608,102 @@ ul {
   display: block;
   position: relative; }
 
+.singleImg {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-image: url("../img/SLIDER-IMAGE-1.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .singleImg:after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: -54px;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    border-left: 0;
+    z-index: 1; }
+
+.single_wrapper {
+  display: block;
+  position: relative;
+  padding: 25px 0; }
+
+.sbar-l {
+  display: block;
+  position: relative;
+  width: 20%;
+  float: left; }
+  .sbar-l .logo {
+    width: 250%;
+    display: block;
+    position: relative;
+    left: -163%;
+    padding: 15px;
+    background-color: #000; }
+    .sbar-l .logo h3 {
+      font-size: 40px;
+      font-family: "Calibri";
+      text-align: right;
+      font-weight: bold;
+      color: #FFF;
+      margin: 0;
+      line-height: 28px; }
+  .sbar-l__selection {
+    display: block;
+    position: relative;
+    padding: 25px 0; }
+    .sbar-l__selection input[type="radio"] {
+      display: none; }
+    .sbar-l__selection input[type="radio"] + label {
+      font-size: 16px;
+      font-family: "LatoRegular";
+      display: block;
+      margin: 0 0 20px 0; }
+    .sbar-l__selection input[type="radio"] + label span {
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      margin: -1px 15px 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+    .sbar-l__selection input[type="radio"] + label span {
+      background-color: #c6ccd2; }
+    .sbar-l__selection input[type="radio"]:checked + label span {
+      background-color: #ff6b00;
+      background-image: url("../img/Check-Icon.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ff6b00; }
+    .sbar-l__selection input[type="radio"] + label span,
+    .sbar-l__selection input[type="radio"]:checked + label span {
+      -webkit-transition: background-color 0.4s linear;
+      -o-transition: background-color 0.4s linear;
+      -moz-transition: background-color 0.4s linear;
+      transition: background-color 0.4s linear; }
+    .sbar-l__selection input[type="radio"]:checked + label {
+      color: #ff6b00; }
+
+.singleContent {
+  display: block;
+  float: left;
+  position: relative;
+  width: 60%; }
+
+.sbar-r {
+  display: block;
+  position: relative;
+  width: 20%;
+  float: left; }
+
 /*# sourceMappingURL=style.css.map */
