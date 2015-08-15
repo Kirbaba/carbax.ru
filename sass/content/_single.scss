@@ -96,11 +96,48 @@
 	position: relative;
 	width: 57%;
 	padding: 0 15px;
-	h2 {
+	&__title {
+		display: block;
+		position: relative;
+		margin-bottom: 20px;
+		float: left;
+		width: 100%;
+		h2 {
 		font-family: $b;
 		display: block;
 		float: left;
 		font-size: 21px;
+		}
+		.stars {
+			display: block;
+			float: right;
+			position: relative;
+			margin: 0.83em 0;
+			&__gold {
+				display: inline-block;
+				position: relative;
+				width: 26px;
+				height: 26px;
+				background: url("../img/stars.png") -7px 0;
+				-webkit-background-size: 512%;
+				     -o-background-size: 512%;
+				        background-size: 512%;
+			}
+			&__dark {	
+				display: inline-block;
+				position: relative;
+				width: 26px;
+				height: 26px;			
+				background: url("../img/stars.png") -106px 0;
+				background-size: 518%;
+			}
+		}
+	}
+	
+
+	&__photo {
+		display: block;
+		position: relative;			
 	}
 }
 

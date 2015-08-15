@@ -64,7 +64,7 @@ body {
   padding: 0;
   height: 100%;
   background-color: #fff;
-  min-width: 1167px;
+  min-width: 1197px;
   font-family: "LatoLight"; }
 
 .contain, .filter__container, .deals__line__block {
@@ -700,11 +700,45 @@ ul {
   position: relative;
   width: 57%;
   padding: 0 15px; }
-  .singleContent h2 {
-    font-family: "LatoBold";
+  .singleContent__title {
     display: block;
+    position: relative;
+    margin-bottom: 20px;
     float: left;
-    font-size: 21px; }
+    width: 100%; }
+    .singleContent__title h2 {
+      font-family: "LatoBold";
+      display: block;
+      float: left;
+      font-size: 21px; }
+    .singleContent__title .stars {
+      display: block;
+      float: right;
+      position: relative;
+      margin: 0.83em 0; }
+      .singleContent__title .stars__gold {
+        display: inline-block;
+        position: relative;
+        width: 26px;
+        height: 26px;
+        background: url("../img/stars.png") -7px 0;
+        -webkit-background-size: 512%;
+        -o-background-size: 512%;
+        background-size: 512%; }
+      .singleContent__title .stars__dark {
+        display: inline-block;
+        position: relative;
+        width: 26px;
+        height: 26px;
+        background: url("../img/stars.png") -106px 0;
+        background-size: 518%; }
+  .singleContent__photo {
+    display: block;
+    position: relative;
+    /* img {
+    	width: 100%;
+    	height: auto;
+    }	 */ }
 
 .sbar-r {
   display: block;
