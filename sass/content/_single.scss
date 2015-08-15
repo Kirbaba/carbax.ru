@@ -94,7 +94,14 @@
 	display: block;
 	float: left;
 	position: relative;
-	width: 60%;
+	width: 57%;
+	padding: 0 15px;
+	h2 {
+		font-family: $b;
+		display: block;
+		float: left;
+		font-size: 21px;
+	}
 }
 
 .sbar-r {
@@ -102,4 +109,12 @@
 	position: relative;
 	width: 20%;
 	float: left;
+	&__commerc {
+		display: block;
+		float: left;
+		width: 100%;
+		height: 260px;
+		background-color: #B1B1B1;
+		margin-bottom: 25px;
+	}
 }
