@@ -1,0 +1,22 @@
+.stars {
+			display: block;
+			position: relative;
+			&__gold {
+				display: inline-block;
+				position: relative;	
+				-webkit-background-size: cover;
+				     -o-background-size: cover;
+				        background-size: cover;
+				background-image: url("../img/star1.png");
+				background-repeat: no-repeat;
+			}
+			&__dark {	
+				display: inline-block;
+				position: relative;			
+				-webkit-background-size: cover;
+				     -o-background-size: cover;
+				        background-size: cover;
+				background-image: url("../img/star2.png");
+				background-repeat: no-repeat;
+			}
+		}
