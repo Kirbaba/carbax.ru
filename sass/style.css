@@ -734,11 +734,21 @@ ul {
         background-size: 518%; }
   .singleContent__photo {
     display: block;
-    position: relative;
-    /* img {
-    	width: 100%;
-    	height: auto;
-    }	 */ }
+    position: relative; }
+  .singleContent__desc h3 {
+    font-size: 20px;
+    font-family: "LatoRegular";
+    color: #1b1b1b; }
+  .singleContent__desc p {
+    font-size: 16px;
+    font-family: "LatoRegular";
+    color: #1b1b1b; }
+  .singleContent__desc h4 {
+    color: #918C8A;
+    font-size: 15px;
+    font-family: "LatoRegular"; }
+    .singleContent__desc h4 span {
+      margin-left: 15px; }
 
 .sbar-r {
   display: block;

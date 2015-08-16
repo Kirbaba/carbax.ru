@@ -139,6 +139,29 @@
 		display: block;
 		position: relative;			
 	}
+
+	&__desc {
+		h3 {
+			font-size: 20px;
+			font-family: $r;
+			color: #1b1b1b;
+		}
+
+		p {
+			font-size: 16px;
+			font-family: $r;
+			color: #1b1b1b;
+		}
+
+		h4 {
+			color: #918C8A;
+			font-size: 15px;
+			font-family: $r;
+			span {
+				margin-left: 15px;
+			}
+		}
+	}
 }
 
 .sbar-r {
