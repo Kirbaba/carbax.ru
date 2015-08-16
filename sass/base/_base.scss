@@ -54,3 +54,8 @@ ul {
 .magenta {
 	color: #025C91;
 }
+
+.passive {
+	@include grayscale(100%);
+	opacity: 0.5;
+}

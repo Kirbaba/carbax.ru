@@ -162,8 +162,8 @@
 		&__block {
 			display: block;
 			float: left;
-			width: 50%;
-			padding-right: 15px;
+			width: 47%;
+			padding-right: 19px;
 			font-family: 'Calibri';
 			&__img {
 				display: block;
@@ -180,7 +180,7 @@
 					&-left {
 						display: block;
 						float: left;
-						width: 67%;
+						width: 65%;
 						padding: 10px 0 0 10px;
 						h4 {
 							font-size: 14px;
@@ -241,6 +241,121 @@
 
 	}
 
+	&__map {
+		display: block;
+		float: left;
+		position: relative;
+		height: 300px;
+		width: 100%;
+		margin: 25px 0;
+	}
+
+	&__services {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		margin-bottom: 25px;
+		h3 {
+			font-size: 20px;
+			font-family: $r;
+			color: #1b1b1b;
+		}
+		&-comfort {
+			display: block;
+			float: left;
+			position: relative;
+			width: 60%;
+			&-block {
+				display: block;
+				position: relative;
+				float: left;
+				width: 50%;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				i {
+					width: 33px;
+					height: 32px;
+					margin-right: 15px;
+				}
+				h4 {
+					margin: 0;
+					display: block;
+					float: left;
+					font-size: 20px;
+					color: #333;
+					line-height: 32px;
+				}
+			}
+		}
+		&-admit {
+			display: block;
+			float: left;
+			position: relative;
+			width: 40%;
+			h3 {
+				font-size: 20px;
+				font-family: $r;
+				color: #1b1b1b;
+			}
+			&-block {
+				display: block;
+				position: relative;
+				float: left;
+				width: 100%;
+				margin-bottom: 5px;
+				i {
+					width: 45px;
+					height: 45px;
+					margin-right: 15px;
+				}
+				h4 {
+					margin: 0;
+					display: block;
+					float: left;
+					font-size: 20px;
+					color: #333;
+					line-height: 45px;
+				}
+				span {
+					line-height: 45px;
+				}
+			}
+
+
+		}
+		
+	}
+		&__worksWith {
+			display: block;
+			float: left;
+			position: relative;
+			width: 100%;
+			margin-bottom: 25px;
+			h3 {
+				font-size: 20px;
+				font-family: $r;
+				color: #1b1b1b;
+				margin-bottom: 0;
+			}
+			&-block {
+				display: block;
+				float: left;
+				width: 1 / 3 * 100%;
+				h4 {
+					text-align: center;		
+					color: #464646;
+					font-size: 17px;	
+					font-family: 'Calibri';		
+				}
+				img {
+					display: block;
+					width: auto;
+					height: 90px;
+					margin: 0 auto;
+				}
+			}
+		}
 }
 
 .sbar-r {

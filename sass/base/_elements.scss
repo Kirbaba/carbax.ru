@@ -1,22 +1,81 @@
 .stars {
-			display: block;
-			position: relative;
-			&__gold {
-				display: inline-block;
-				position: relative;	
-				-webkit-background-size: cover;
-				     -o-background-size: cover;
-				        background-size: cover;
-				background-image: url("../img/star1.png");
-				background-repeat: no-repeat;
-			}
-			&__dark {	
-				display: inline-block;
-				position: relative;			
-				-webkit-background-size: cover;
-				     -o-background-size: cover;
-				        background-size: cover;
-				background-image: url("../img/star2.png");
-				background-repeat: no-repeat;
-			}
-		}
+	display: block;
+	position: relative;
+	&__gold {
+		display: inline-block;
+		position: relative;	
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		background-image: url("../img/star1.png");
+		background-repeat: no-repeat;
+	}
+	&__dark {	
+		display: inline-block;
+		position: relative;			
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		background-image: url("../img/star2.png");
+		background-repeat: no-repeat;
+	}
+}
+
+.icon {
+	&__cafe {
+		background-image: url('../img/cafe.png');
+		display: block;		
+		float: left;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	&__bankomat {
+		background-image: url('../img/bankomat.png');
+		display: block;	
+		float: left;	
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	&__wc {
+		background-image: url('../img/wc.png');
+		display: block;	
+		float: left;	
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	&__wifi {
+		background-image: url('../img/wifi.png');
+		display: block;	
+		float: left;	
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	&__ur {
+		@extend .icon__cafe;
+		background-image: url('../img/ur.png');
+	}
+
+	&__cp {
+		@extend .icon__cafe;
+		background-image: url('../img/cp.png');
+	}
+
+	&__voit {
+		display: block;
+		float: left;
+		width: 12px;
+		height: 11px;
+		margin-left: 10px;
+		background-image: url('../img/voit.png');
+		background-repeat: no-repeat;
+		background-position: 50%;		
+	}
+}
