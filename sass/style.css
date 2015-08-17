@@ -999,10 +999,10 @@ ul {
         position: absolute;
         padding: 0 3px;
         font-family: "LatoRegular";
-        height: 30px;
+        height: 35px;
         line-height: 30px;
         text-align: center;
-        top: -2px;
+        top: 0;
         left: 10px;
         background-color: #ff6b00;
         color: #FFF;
@@ -1121,6 +1121,139 @@ ul {
               font-family: "LatoBold"; }
       .singleContent__deals__block:hover .singleContent__deals__block-img-more {
         display: block; }
+  .singleContent__coments {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 25px; }
+    .singleContent__coments h3 {
+      font-size: 20px;
+      font-family: "LatoRegular";
+      color: #1b1b1b;
+      margin-bottom: 15px; }
+    .singleContent__coments__first, .singleContent__coments__next {
+      display: block;
+      float: left;
+      width: 100%;
+      position: relative;
+      margin-bottom: 15px; }
+      .singleContent__coments__first-img {
+        width: 20%;
+        display: block;
+        float: left;
+        overflow: hidden; }
+        .singleContent__coments__first-img img {
+          width: 100%;
+          height: auto; }
+      .singleContent__coments__first-text {
+        width: 70%;
+        padding-left: 5%;
+        display: block;
+        float: left;
+        position: relative; }
+        .singleContent__coments__first-text a {
+          text-decoration: underline;
+          color: #ff6b00; }
+          .singleContent__coments__first-text a h4 {
+            margin: 0;
+            display: block;
+            float: left;
+            width: 89%;
+            padding-bottom: 10px; }
+        .singleContent__coments__first-text .data {
+          display: block;
+          float: left;
+          position: relative;
+          font-size: 10px;
+          width: 10%; }
+        .singleContent__coments__first-text p {
+          font-size: 14px;
+          margin: 0; }
+        .singleContent__coments__first-text .repl {
+          background-image: url("../img/repl.png");
+          background-repeat: no-repeat;
+          background-position: 0 50%;
+          padding-left: 23px;
+          padding-bottom: 2px; }
+        .singleContent__coments__first-text .thnx {
+          float: right;
+          background-image: url("../img/like.png");
+          background-repeat: no-repeat;
+          background-position: 100% 50%;
+          padding-right: 10px;
+          padding-bottom: 2px; }
+    .singleContent__coments__next {
+      width: 95%;
+      margin-left: 5%;
+      margin-bottom: 15px; }
+      .singleContent__coments__next-img {
+        width: 20%;
+        display: block;
+        float: left;
+        overflow: hidden; }
+        .singleContent__coments__next-img img {
+          width: 100%;
+          height: auto; }
+      .singleContent__coments__next-text {
+        width: 70%;
+        padding-left: 5%;
+        display: block;
+        float: left;
+        position: relative; }
+        .singleContent__coments__next-text a {
+          text-decoration: underline;
+          color: #ff6b00; }
+          .singleContent__coments__next-text a h4 {
+            margin: 0;
+            display: block;
+            float: left;
+            width: 89%;
+            padding-bottom: 10px; }
+        .singleContent__coments__next-text .data {
+          display: block;
+          float: left;
+          position: relative;
+          font-size: 10px;
+          width: 10%; }
+        .singleContent__coments__next-text p {
+          font-size: 14px;
+          margin: 0; }
+        .singleContent__coments__next-text .repl {
+          background-image: url("../img/repl.png");
+          background-repeat: no-repeat;
+          background-position: 0 50%;
+          padding-left: 23px;
+          padding-bottom: 2px; }
+        .singleContent__coments__next-text .thnx {
+          float: right;
+          background-image: url("../img/like.png");
+          background-repeat: no-repeat;
+          background-position: 100% 50%;
+          padding-right: 10px;
+          padding-bottom: 2px; }
+    .singleContent__coments__addcomment {
+      display: block;
+      float: left;
+      width: 100%;
+      position: relative;
+      background-color: #F3F3F3; }
+      .singleContent__coments__addcomment #coment_text {
+        display: block;
+        float: left;
+        width: 99%;
+        position: relative;
+        margin-bottom: 5px; }
+      .singleContent__coments__addcomment .like {
+        display: block;
+        float: left; }
+      .singleContent__coments__addcomment .dislike {
+        display: block;
+        text-align: right;
+        margin-right: 5px; }
+    .singleContent__coments .commentSub {
+      display: block;
+      margin: 5px auto; }
 
 .sbar-r {
   display: block;
