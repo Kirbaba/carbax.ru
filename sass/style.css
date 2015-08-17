@@ -974,6 +974,153 @@ ul {
         width: auto;
         height: 90px;
         margin: 0 auto; }
+  .singleContent__deals {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 25px; }
+    .singleContent__deals h3 {
+      font-size: 20px;
+      font-family: "LatoRegular";
+      color: #1b1b1b;
+      margin-bottom: 15px; }
+    .singleContent__deals__block {
+      display: block;
+      position: relative;
+      float: left;
+      width: 32%;
+      margin: 0 8px 8px 0;
+      -webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75); }
+      .singleContent__deals__block-sale {
+        display: block;
+        position: absolute;
+        padding: 0 3px;
+        font-family: "LatoRegular";
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        top: -2px;
+        left: 10px;
+        background-color: #ff6b00;
+        color: #FFF;
+        font-size: 16px;
+        z-index: 99;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 100%);
+        -ms-clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 100%); }
+      .singleContent__deals__block-img {
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        display: block;
+        position: relative; }
+        .singleContent__deals__block-img img {
+          width: auto;
+          height: 100%;
+          overflow: hidden; }
+        .singleContent__deals__block-img-more {
+          display: none;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 80px;
+          background: rgba(0, 0, 0, 0.7); }
+          .singleContent__deals__block-img-more:before {
+            content: '';
+            display: block; }
+          .singleContent__deals__block-img-more p {
+            margin: 5px;
+            font-size: 12px;
+            color: #FFF; }
+          .singleContent__deals__block-img-more a {
+            color: #FFF;
+            text-transform: uppercase;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            border-radius: 2px;
+            font-size: 12px;
+            font-family: "LatoRegular";
+            padding: 5px;
+            margin: 5px 0 0 5px;
+            display: block;
+            float: left;
+            -o-background-clip: padding-box;
+            background-clip: padding-box;
+            background-color: #272727;
+            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.94);
+            -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.94);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.94);
+            background-image: -moz-linear-gradient(bottom, #0589cd 0%, #35abe5 100%);
+            background-image: -o-linear-gradient(bottom, #0589cd 0%, #35abe5 100%);
+            background-image: -webkit-linear-gradient(bottom, #0589cd 0%, #35abe5 100%);
+            background-image: linear-gradient(bottom, #0589cd 0%, #35abe5 100%); }
+            .singleContent__deals__block-img-more a:hover, .singleContent__deals__block-img-more a:active, .singleContent__deals__block-img-more a:focus {
+              box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+              outline-color: rgba(255, 255, 255, 0);
+              outline-offset: 15px;
+              text-shadow: 1px 1px 2px #427388;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-image: -moz-linear-gradient(bottom, #04689b 0%, #1a92cd 100%);
+              background-image: -o-linear-gradient(bottom, #04689b 0%, #1a92cd 100%);
+              background-image: -webkit-linear-gradient(bottom, #04689b 0%, #1a92cd 100%);
+              background-image: linear-gradient(bottom, #04689b 0%, #1a92cd 100%); }
+      .singleContent__deals__block-desc {
+        position: relative;
+        display: block;
+        float: left; }
+        .singleContent__deals__block-desc p {
+          color: #6D585C;
+          font-size: 12px;
+          margin: 5px; }
+        .singleContent__deals__block-desc-price {
+          display: block;
+          height: 25px;
+          width: 100%;
+          float: left;
+          overflow: hidden;
+          border-top: 2px solid #f4cbb9; }
+          .singleContent__deals__block-desc-price_old {
+            display: block;
+            float: left;
+            width: 50%; }
+            .singleContent__deals__block-desc-price_old p {
+              margin: 0;
+              line-height: 25px;
+              padding-left: 10px;
+              font-size: 12px;
+              font-family: "LatoBold"; }
+          .singleContent__deals__block-desc-price_new {
+            display: block;
+            float: left;
+            width: 50%;
+            overflow: hidden;
+            background-color: #ff6b00;
+            -webkit-transform: skew(-20deg);
+            -moz-transform: skew(-20deg);
+            -o-transform: skew(-20deg);
+            padding-bottom: 30px; }
+            .singleContent__deals__block-desc-price_new p {
+              margin: 0;
+              display: block;
+              text-align: right;
+              background-color: #ff6b00;
+              color: #FFF;
+              padding-right: 10px;
+              line-height: 25px;
+              -webkit-transform: skew(20deg);
+              -moz-transform: skew(20deg);
+              -o-transform: skew(20deg);
+              font-size: 16px;
+              font-family: "LatoBold"; }
+      .singleContent__deals__block:hover .singleContent__deals__block-img-more {
+        display: block; }
 
 .sbar-r {
   display: block;
