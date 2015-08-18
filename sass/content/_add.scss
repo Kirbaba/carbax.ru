@@ -1,0 +1,131 @@
+.addContent {
+	@extend .singleContent;
+}
+
+.add__sbar-l {
+	@extend .sbar-l;
+	.logo{
+		width: 100%;
+		position: relative;
+		left: 0;
+		padding: 15px 0;
+		&__bgline {
+			width: 250%;
+			height: 49px;
+			margin: 0;
+			padding: 0;
+			right: 0;
+			float: right;
+			position: absolute;
+			z-index: 0;
+			background: #000;
+		}
+		h4 {
+			font-size: 16px;
+			text-align: right;
+			color: #FFF;
+			margin: 0;
+			line-height: 21px;
+			display: block;
+			float: left;
+			-webkit-user-select: none;
+			   -moz-user-select: none;
+			    -ms-user-select: none;
+			        user-select: none;
+		}
+
+	}
+	&__selection {
+		@extend .sbar-l__selection;
+		h4 {
+			color: #1b1b1b;
+			font-family: $b;
+			font-size: 17px;
+			margin-top: 0;
+		}
+	}
+}
+
+	.sr-only {
+	  position: absolute;
+	  width: 1px;
+	  height: 1px;
+	  margin: -1px;
+	  clip: rect(0 0 0 0);
+	}
+
+	%unstyled-list {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	$button-padding: 16px;
+	$line-width: 25px;
+	$line-height: 3px;
+	$line-bg: #fff;
+	.menu-icon {
+	  display: block;
+	  width: 100%;
+	  height: ($line-height) + ($button-padding);
+	  cursor: pointer;
+	  padding: 0;
+	  
+	  
+	  &__lines {
+	    display: block;
+	    float: right;
+	    margin-right: 15px;
+	    width: $line-width;
+	    height: $line-height;
+	    background: $line-bg;
+	    box-shadow: 0 0.5rem 0 0 $line-bg,
+	                0 1rem 0 0 $line-bg;
+	    	                   
+	  }
+	}
+
+	.main-nav {
+	  position: absolute;
+	  top: 49px;
+	  left: 0;
+	  width: 100%;
+	  background: #000;
+	  color: #fff;
+	  padding: 0;
+	  transition: transform 0.2s ease;
+	  transform: translateY(-100%);
+	  z-index: 99;
+	  display: none;
+	  
+	  :checked + & {
+	    transform: translateY(0);
+	    display: block;	   
+	  }
+	  a {
+	    display: block;
+	    color: #fff;
+	    text-decoration: none;
+	    padding: 0.5rem 1rem;
+	    font-size: 16px;
+	  }
+	  
+	  &__list {
+	    @extend %unstyled-list;
+	    
+	    li + li {
+	      border-top: 1px solid rgba(#fff,0.25);
+	    }
+	    li:hover {
+	    	background-color: #2B2B2B;
+	    }
+	  }
+	}
+
+.menu-icon:hover, .menu-icon:active {
+	span {
+		background: $o;
+		box-shadow: 0 0.5rem 0 0 $o,
+	                0 1rem 0 0 $o;
+	}
+}

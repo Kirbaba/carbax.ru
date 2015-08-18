@@ -124,8 +124,9 @@
 	
 
 	&__photo {
-		display: block;
-		position: relative;			
+		display: inline-block;
+		position: relative;		
+		width: 100%;	
 	}
 
 	&__desc {
