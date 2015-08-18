@@ -1,5 +1,186 @@
 .addContent {
 	@extend .singleContent;
+	&__title {
+		    width: 239px;
+			height: 30px;
+			border-radius: 3px / 4px;
+			-o-background-clip: padding-box;
+			background-clip: padding-box;
+			background-color: #fff;
+			outline-style: none;
+			border: 2px solid #C6CCD2;
+			padding: 0 0px 0 10px;
+			margin-top: 15px;
+			display: inline-block;
+	}
+	&__adress {
+		@extend .addContent__title;
+		width: 407px;
+		&-add {
+			display: inline-block;
+			margin: 0 0 0 10px;
+			vertical-align: baseline;
+			line-height: 31px;
+			text-align: center;
+			color: #FFF;
+			font-family: $b;
+			font-size: 20px;
+			width: 31px;
+			height: 31px;
+			@include border-radius(4px);
+			@include background-clip(padding-box);
+			background-color: $o;
+			&:hover {
+				background-color: darken( $o, 10%);
+			}
+
+		}
+		
+	}
+	&__time {
+		@extend .addContent__title;
+		width: 38px;
+		height: 20px;
+		margin-top: 0;
+	}
+	&__cont {
+		@extend .addContent__time;
+		width: 131px;
+		margin-top: 0;
+		&-add {
+			@extend .addContent__adress-add;
+			    height: 20px;
+			    width: 20px;
+				line-height: 20px;
+				font-size: 15px;
+				vertical-align: text-bottom;
+		}
+	}
+	&__description {
+		@extend .addContent__title;
+		width: 445px;
+		height: 190px;
+		resize: none;
+		margin-top: 0;
+		padding: 10px;
+	}
+	.singleContent__services-comfort-block {
+		label {
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			cursor: pointer;
+			background: linear-gradient(top, #222 0%, #45484d 100%);
+			border-radius: 50px;
+			&:after {
+				content: '';
+				width: 9px;
+				height: 5px;
+				position: absolute;
+				top: 5px;
+				left: 4px;
+				border: 3px solid #fcfff4;
+				border-top: none;
+				border-right: none;
+				background: rgba(0, 0, 0, 0.3);
+				opacity: 0.3;
+				transform: rotate(-45deg);
+				-webkit-box-shadow: 0px 2px 10px 8px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: 0px 2px 10px 8px rgba(0, 0, 0, 0.3);
+				box-shadow: 0px 2px 10px 8px rgba(0, 0, 0, 0.3)
+			}
+		&:hover::after {
+			opacity: 0.5;
+		}
+	}
+	input[type=checkbox] {
+		visibility: hidden;
+		&:checked + label:after {
+			opacity: 1;			
+			}
+		} 
+	}   
+	.singleContent__services-admit-block {		
+		label {
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			cursor: pointer;
+			background: linear-gradient(top, #222 0%, #45484d 100%);
+			border-radius: 50px;
+			&:after {
+				content: '';
+				width: 9px;
+				height: 5px;
+				position: absolute;
+				top: 10px;
+				left: 11px;
+				border: 3px solid #000;
+				border-top: none;
+				border-right: none;
+				background: rgba(255, 255, 255, 1);
+				opacity: 0.3;
+				transform: rotate(-45deg);
+				-webkit-box-shadow: 0px 2px 10px 8px rgba(255, 255, 255, 1);
+				-moz-box-shadow: 0px 2px 10px 8px rgba(255, 255, 255, 1);
+				box-shadow: 0px 2px 10px 8px rgba(255, 255, 255, 1);
+			}
+		&:hover::after {
+			opacity: 0.5;
+		}
+	}
+	input[type=checkbox] {
+		visibility: hidden;
+		&:checked + label:after {
+			opacity: 1;			
+			}
+		} 
+	} 
+
+	.singleContent__worksWith-block {
+		position: relative;
+		label {
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			top: 40px;
+			left: 100px;
+			cursor: pointer;
+			background: linear-gradient(top, #222 0%, #45484d 100%);
+			border-radius: 50px;
+			&:after {
+				content: '';
+				width: 9px;
+				height: 5px;
+				position: absolute;
+				top: 10px;
+				left: 11px;
+				border: 3px solid #000;
+				border-top: none;
+				border-right: none;
+				background: rgba(255, 255, 255, 0.5);
+				opacity: 0.3;
+				transform: rotate(-45deg);
+				-webkit-box-shadow: 0px 2px 10px 8px rgba(255, 255, 255, 1);
+				-moz-box-shadow: 0px 2px 10px 8px rgba(255, 255, 255, 1);
+				box-shadow: 0px 2px 10px 8px rgba(255, 255, 255, 1);
+			}
+		&:hover::after {
+			opacity: 0.5;
+		}
+	}
+	input[type=checkbox] {
+		visibility: hidden;
+		&:checked + label:after {
+			opacity: 1;			
+			}
+		} 
+	}
+	
 }
 
 .add__sbar-l {
@@ -127,5 +308,35 @@
 		background: $o;
 		box-shadow: 0 0.5rem 0 0 $o,
 	                0 1rem 0 0 $o;
+	}
+}
+
+.addAllServices {
+	width: 75%;
+	margin: 25px auto;
+	border-collapse: collapse;
+	tr {		
+		background: #DCDCDC;
+		&:nth-child(odd) {
+			background: #F1F1F1;
+		}
+		b {
+			font-family: $b;
+		}
+		&:hover {
+			background: darken(#DCDCDC, 10%);
+		}
+	}
+	&__control {
+		float: right;
+		a {
+			color: #494949;
+			&:hover, &:active {
+				color: #000;
+			}
+		}
+	}
+	td {
+		padding:10px;
 	}
 }

@@ -111,8 +111,92 @@
 			</div>
 <!-- ___________________Левый сайдбар_______________________ -->
 			<div class="addContent">
-				Hello
+				<input type="text" class="addContent__title" placeholder="Название автосервиса">
+				<input type="text" class="addContent__adress" placeholder="Адрес автосервиса">
+				<a href="#nowhere" class="addContent__adress-add">+</a>
+				
+				<div class="singleContent__map">
+					<div id="map_canvas" style="width:100%; height:100%"></div>
+				</div>
 
+				<div class="singleContent__desc">					
+					<h3>Время работы</h3>
+					<h4>ПН - ПТ с <input type="text" class="addContent__time"> до <input type="text" class="addContent__time"></h4>
+					<h4>СБ - ВС с <input type="text" class="addContent__time"> до <input type="text" class="addContent__time"></h4>		
+					<h3>Контакты</h3>	
+					<h4>Телефон <input type="text" class="addContent__cont"><a href="#nowhere" class="addContent__cont-add">+</a></h4>
+					<h4>Почта <input type="text" class="addContent__cont"></h4>	
+
+					<h3>Описание</h3>
+					<textarea name="text" id="addContent__description"  class="addContent__description"></textarea>
+
+
+					<div class="singleContent__services">
+					<div class="singleContent__services-comfort">
+						<h3>Зона комфорта</h3>
+						<div class="singleContent__services-comfort-block">
+							<i class="icon__bankomat"></i>
+							<h4>Банкомат</h4>
+							<input type="checkbox" value="None" id="bankomat" name="check" checked />
+  							<label for="bankomat"></label>
+						</div>
+						<div class="singleContent__services-comfort-block">
+							<i class="icon__cafe"></i>
+							<h4>Кафе</h4>
+							<input type="checkbox" value="None" id="cafe" name="check" checked />
+  							<label for="cafe"></label>
+						</div>
+						<div class="singleContent__services-comfort-block">
+							<i class="icon__wc"></i>
+							<h4>Туадет</h4>
+							<input type="checkbox" value="None" id="wc" name="check" checked />
+  							<label for="wc"></label>
+						</div>
+						<div class="singleContent__services-comfort-block">
+							<i class="icon__wifi"></i>
+							<h4>Wi-Fi</h4>
+							<input type="checkbox" value="None" id="wifi" name="check" checked />
+  							<label for="wifi"></label>
+						</div>
+					</div>					
+				</div>
+				<div class="singleContent__services-admit">
+						<h3>Принимаем</h3>
+						<div class="singleContent__services-admit-block">
+							<i class="icon__ur"></i>
+							<h4>Юридическое лицо</h4>
+							<input type="checkbox" value="None" id="ur" name="check" checked />
+  							<label for="ur"></label>
+						</div>
+						<div class="singleContent__services-admit-block">
+							<i class="icon__cp"></i>							
+							<h4>Частное лицо</h4>
+							<input type="checkbox" value="None" id="cp" name="check" checked />
+  							<label for="cp"></label>
+						</div>
+					</div>
+				</div>
+				<div class="singleContent__worksWith">
+					<h3>Работаем</h3>
+					<div class="singleContent__worksWith-block">
+						<h4>С грузовыми авто</h4>
+						<img src="img/gruz.png" alt="">
+						<input type="checkbox" value="None" id="gruz" name="check" checked />
+  						<label for="gruz"></label>
+					</div>
+					<div class="singleContent__worksWith-block">
+						<h4>С легковыми авто</h4>
+						<img src="img/sedan.png" alt="">
+						<input type="checkbox" value="None" id="sedan" name="check" checked />
+  						<label for="sedan"></label>
+					</div>
+					<div class="singleContent__worksWith-block">
+						<h4>С мототехникой</h4>
+						<img src="img/velo.png" alt="">
+						<input type="checkbox" value="None" id="velo" name="check" checked />
+  						<label for="velo"></label>
+					</div>
+				</div>
 			</div>
 <!-- ___________________Правый сайдбар_______________________ -->			
 			<div class="sbar-r">
@@ -124,7 +208,34 @@
 			</div>
 		</div>
 	</section>
-<!-- ___________________Правый сайдбар_______________________ -->		
+<!-- ___________________Правый сайдбар_______________________ -->
+
+<div class="contain">
+	<table class="addAllServices">
+		<tr>
+			<td><b>Автосервис «Мехника-3»</b>, г. Москва, ул. Дубровка д. 5. </td>
+			<td class="addAllServices__control">
+				<a href="#nowhere">редактировать </a>/
+				<a href="#nowhere">удалить</a>
+			</td>		
+		</tr>
+		<tr>
+			<td><b>Автосервис «Мехника-3»</b>, г. Москва, ул. Дубровка д. 5. </td>
+			<td class="addAllServices__control">
+				<a href="#nowhere">редактировать </a>/
+				<a href="#nowhere">удалить</a>
+			</td>		
+		</tr>
+		<tr>
+			<td><b>Автосервис «Мехника-3»</b>, г. Москва, ул. Дубровка д. 5. </td>
+			<td class="addAllServices__control">
+				<a href="#nowhere">редактировать </a>/
+				<a href="#nowhere">удалить</a>
+			</td>		
+		</tr>		
+	</table>
+</div>
+
 
 <!-- ___________________ФУТЕР_______________________ -->
 	<footer class="footer">
