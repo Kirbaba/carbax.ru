@@ -1,4 +1,3 @@
-
 /*-------------GOOGLE MAPS-----------------*/
 
 function initialize() {
