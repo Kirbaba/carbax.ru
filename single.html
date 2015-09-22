@@ -10,7 +10,41 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__leftSide">
+		<div class="header__container">
+			<a href="#" class="header--logo">
+				<img src="img/smalllogo.png" alt="">
+				<h5>Car<span class="orange">bax</span></h5>
+			</a>
+			<a href="#" class="header--autotext">Autotext</a>
+			<a href="#" class="header--perscab">Личный кабинет</a>
+			<form action="#" class="header--region">
+				<input type="text" class="header--region--box" placeholder="Москва">
+			</form>
+			<a href="#" class="header--messages">Мои сообщения <span>(1)</span></a>
+			<a href="#" class="header--sales"><span>Спецпредложения</span></a>
+			<div class="header--request">
+				<label for="menu-open-flag" class="header--request--open" role="presentation">
+					ЗАЯВКА НА СЕРВИС +
+				</label>				
+				<input type="checkbox" id="menu-open-flag" class="sr-only" aria-label="Menu Visibility">
+					<nav class="main-nav" role="navigation">					
+						<ul class="main-nav__list">
+							<li><a href="#">Автосалон</a></li>
+							<li><a href="#">Диски</a></li>
+							<li><a href="#">Шиномонтаж</a></li>
+							<li><a href="#">Автомойка</a></li>
+							<li><a href="#">Страхование</a></li>
+							<li><a href="#">Эвакуатор</a></li>
+							<li><a href="#">Шины</a></li>
+							<li><a href="#">Автосервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+							<li><a href="#">Тюнинг</a></li>
+						</ul>
+					</nav>
+			</div>
+			<a href="#" class="header--logout"></a>
+		</div>
+		<!-- <div class="header__leftSide">
 			<ul class="header__leftSide__menu">
 				<a href="#nowhere">
 					<li><i class="header__leftSide__menu__write"></i></li>
@@ -44,7 +78,7 @@
 					<li><i class="header__rightSide__menu__logout"></i></li>
 				</a>
 			</ul>
-		</div>
+		</div> -->
 	</header>
 
 	<section class="singleImg"></section>
