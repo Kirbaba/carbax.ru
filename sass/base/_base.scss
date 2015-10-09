@@ -9,7 +9,7 @@ body {
 }
 
 .contain {
-	width: 1167px;
+	width: 990px;
 	padding: 0 15px;
 	display: block;
 	margin: 0 auto;
@@ -58,4 +58,9 @@ ul {
 .passive {
 	@include grayscale(100%);
 	opacity: 0.5;
+}
+
+.line {
+    display: block;
+    float: left;
 }

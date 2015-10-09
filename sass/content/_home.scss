@@ -9,34 +9,59 @@
 	background-size: cover;
 	@include after_left();
 	&__title {
-		display: block;
-		width: 551px;
-		position: relative;
-		margin: 0 auto;
-		background: rgba(0, 0 ,0 , 0.8);
-		padding: 0 20px 10px;
-		&__logo {
-			display: inline-block;
-			width: 20%;
-			img {
-				display: block;
-				width: 91px;
-				height: 91px;
-			}
-		}
+	// 	display: block;
+	// 	width: 551px;
+	// 	position: relative;
+	// 	margin: 0 auto;
+	// 	background: rgba(0, 0 ,0 , 0.8);
+	// 	padding: 0 20px 10px;
+	// 	&__logo {
+	// 		display: inline-block;
+	// 		width: 20%;
+	// 		img {
+	// 			display: block;
+	// 			width: 91px;
+	// 			height: 91px;
+	// 		}
+	// 	}
+		
+		// &__desc {
+		// 	display: inline-block;
+		// 	width: 75%;
+		// 	h1 {
+		// 		color: #fff;
+		// 		font-size: 75px;
+		// 		display: block;
+		// 		font-family: "Calibri";
+		// 		text-align: center;
+		// 		font-weight: bold;
+		// 		border-bottom: 1px solid #fff;
+		// 		margin: 0;
+		// 	}
+		// 	p {
+		// 		margin: 5px 0 0;
+		// 		color: #fff;
+		// 		font-size: 24px;
+		// 		text-align: center;
+		// 		font-family: $r;
+		// 	}
+		// }
 		
 		&__desc {
-			display: inline-block;
-			width: 75%;
+			display: block;
+			margin: 0 auto;
+			width: 40%;
 			h1 {
 				color: #fff;
 				font-size: 75px;
 				display: block;
 				font-family: "Calibri";
 				text-align: center;
-				font-weight: bold;
-				border-bottom: 1px solid #fff;
+				font-weight: bold;				
 				margin: 0;
+				span {
+					border-bottom: 1px solid #fff;
+				}
 			}
 			p {
 				margin: 5px 0 0;
@@ -50,21 +75,116 @@
 	&__but {
 		display: block;
 		margin: 25px auto;
-		width: 375px;
-		a {
-			display: inline-block;
+		width: 248px;
+		position: relative;		
+		// a {
+		// 	display: inline-block;
+		// 	background-color: $o;
+		// 	width: 162px;
+		// 	height: 32px;
+		// 	color: #fff;
+		// 	text-align: center;
+		// 	font-family: $b;
+		// 	margin: 0 10px;
+		// 	line-height: 32px;
+		// 	&:hover, &:active &:focus{
+		// 		background-color: darken($o, 10%);
+		// 	}
+		// }
+		
+		&--but {
+			display: block;
+			margin: 0 auto;
 			background-color: $o;
-			width: 162px;
-			height: 32px;
+			width: 248px;
+			height: 53px;
 			color: #fff;
 			text-align: center;
 			font-family: $b;
-			margin: 0 10px;
-			line-height: 32px;
+			line-height: 53px;
+			text-transform: uppercase;
+			position: relative;
+			font-size: 19px;
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 248px;
+				height: 5px;
+				@include border-radius(0 248px 7px 7px / 0 0 5px 5px);
+				@include background-clip(padding-box);
+				background-color: #bb4f01;
+
+			}
 			&:hover, &:active &:focus{
 				background-color: darken($o, 10%);
+				&:after {
+					background-color: lighten(#bb4f01, 10%);
+				}
 			}
 		}
+	}
+	&-nav {
+		display: none;
+		position: absolute;
+		color: #FFF;
+		left: 7px;
+		top: 58px;
+	    background-color: #2b2b2b;
+		width: 235px;
+		//margin: 5px auto;
+		padding: 0;
+		transition: transform 0.2s ease;
+		z-index: 999;
+		li {
+			display: block;
+			float: left;			
+			background-color: #2b2b2b;
+			border-top: 1px solid rgba(#fff,0.25);
+			&:nth-child(even) {
+				border-left: 1px dotted #3e3e3e;
+			}
+			&:nth-child(1) {
+				border-left: 4px solid #75ce6d;
+			}
+			&:nth-child(3) {
+				border-left: 4px solid #6EB4E8;
+			}
+			&:nth-child(5) {
+				border-left: 4px solid #e5c04c;
+			}
+			&:nth-child(7) {
+				border-left: 4px solid #ce5b4e;
+			}
+			&:nth-child(9) {
+				border-left: 4px solid #74557f;
+			}
+		}
+		a {
+			display: block;
+			color: #fff;	
+			width: 100px;
+			height: 50px;
+			line-height: 50px;	
+			padding-left: 15px;				
+			background-color: #2b2b2b;			
+			text-decoration: none;
+			font-size: 13px;
+			&:hover {
+				color: $o;
+			}
+		}
+		&__list {
+		    @extend %unstyled-list;
+		    /* 
+		    li + li {
+		      border-top: 1px solid rgba(#fff,0.25);
+		    } */
+		    li:hover {
+		    	background-color: #2B2B2B;
+		    }
+		  }
 	}
 }
 
@@ -73,9 +193,129 @@
 	position: relative;
 	padding-bottom: 50px;
 	@include after_right();
+	&__searchline {
+		width: 983px;
+		display: inline-block;
+		border: 3px solid $o;
+		select {
+			width: 195px;
+			height: 30px;
+			padding: 0;
+			display: block;
+			float: left;
+			border-right: 3px solid $o;
+			option {
+				height: 30px;
+			}					
+		}
+		&--search {
+			display: block;
+			float: left;
+			width: 180px;
+			height: 30px;
+			border-right: 3px solid #ff6b00;
+			outline: none;
+			border-width: 0 3px 0 0;
+			padding: 0 10px;
+		}
+		&--but {
+			display: block;
+			float: left;
+			height: 30px;
+			width: 97px;
+			border-width: 0 3px 0 0;
+			text-align: center;
+			background-color: #ebebeb;
+			outline: none;
+			cursor: pointer;
+			&:hover, &:active, &:focus {
+				background-color: darken(#ebebeb, 10%);
+			}
+			&:last-of-type {
+				border: 0;
+			}
+		}
+	}
+	&__typesearch {
+		width: 100%;
+		display: inline-block;
+		&--box {
+			width: 40%;
+			float: right;
+			select {
+				display: block;
+				float: left;
+				margin: 5px 0 5px 8px;
+				width: 189px;
+				height: 21px;
+				@include border-radius(3px);
+				@include background-clip(padding-box);
+				background-color: #fff;
+				@include box-shadow(1px, 4px, 3px, rgba(0,0,0,.38));
+				outline: none;
+			}
+		}
+	}
 	&__container {
 		@extend .contain;
-		width: 928px;		
+		width: 928px;
+		&--select{
+			display: block;
+			float: left;
+			position: relative;
+			width: 30%;
+			input[type="checkbox"] {
+			    display:none;
+			}
+			input[type="checkbox"] + label {
+		    font-size:16px;
+		    font-family: $r;
+			display: block;
+			margin: 0 0 20px 0;
+			}
+			input[type="checkbox"] + label span {
+			    display: inline-block;
+			    width:19px;
+			    height:19px;
+			    margin:-1px 15px 0 0;
+			    vertical-align:middle;
+			    cursor:pointer;
+			    -moz-border-radius:  50%;
+			    border-radius:  50%;
+			}
+
+			input[type="checkbox"] + label span {
+			     background-color: #c6ccd2;
+			}
+
+			input[type="checkbox"]:checked + label span{
+			     background-color: $o;
+			     background-image: url("../img/Check-Icon.png");
+			     background-position: center;
+			     background-repeat: no-repeat;
+			     color: $o;
+			}
+
+			input[type="checkbox"] + label span,
+			input[type="checkbox"]:checked + label span {
+			  -webkit-transition:background-color 0.4s linear;
+			  -o-transition:background-color 0.4s linear;
+			  -moz-transition:background-color 0.4s linear;
+			  transition:background-color 0.4s linear;
+			}
+
+			input[type="checkbox"]:checked + label {
+				color: $o;
+			}
+			&--map {
+				display: block;
+				float: left;
+				position: relative;
+				width: 70%;
+				height: 780px;
+			}
+		}	
+
 		&__block {
 			display: block;
 			float: left;
@@ -135,7 +375,8 @@
 			display: block;
 			float: left;
 			width: 75%;
-			padding-right: 5%;
+		    padding-right: 3%;
+    		padding-left: 2%;
 			color: #FFF;
 			font-family: 'Calibri';
 			h3 {
@@ -146,7 +387,6 @@
 				font-size: 20px;
 				margin: 0;
 				display: block;
-				margin-right: 20%;
 			}
 		}
 	}
