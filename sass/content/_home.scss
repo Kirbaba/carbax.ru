@@ -258,7 +258,8 @@
 	}
 	&__container {
 		@extend .contain;
-		width: 928px;
+		width: 100%;
+		padding: 0;
 		&--select{
 			display: block;
 			float: left;
@@ -480,7 +481,7 @@
 	// 	}
 	// }
 	
-	display: block;
+	display: inline-block;
 		position: relative;
 		float: left;
 		width: 100%;
@@ -500,7 +501,8 @@
 		&__line {
 			display: block;
 			float: left;
-			margin: 0 -3%;
+			width: 107%;
+			margin: 25px -3%;
 		}
 		&__block {			
 			display: block;
@@ -511,12 +513,13 @@
 			-webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
 			-moz-box-shadow:    0px 2px 2px 0px rgba(50, 50, 50, 0.75);
 			box-shadow:         0px 2px 2px 0px rgba(50, 50, 50, 0.75);	
+
 			&-sale {
 				display: block;
 				position: absolute;
 				padding: 0 3px;
-				font-family: $r;
-				height: 35px;
+				font-family: $b;
+				height: 40px;
 				line-height: 30px;
 				text-align: center;
 				top: 0;
@@ -525,10 +528,10 @@
 				color: #FFF;
 				font-size: 16px;
 				z-index: 99;
-				-webkit-clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 100%);
-				  -moz-clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 100%);
-				  -ms-clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 100%);
-				  clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 100%);
+				-webkit-clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 100%, 0 65%, 0 100%);
+				  -moz-clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 100%, 0 65%, 0 100%);
+				  -ms-clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 100%, 0 65%, 0 100%);
+				  clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 100%, 0 65%, 0 100%);
 			}		
 			&-img {
 				width: 100%;
@@ -536,10 +539,19 @@
 				overflow: hidden;
 				display: block;
 				position: relative;
-				img {
-					width: auto;
+				text-align: center;
+				word-spacing: nowrap;
+				vertical-align: middle;
+				&:after {
+					content: "";
+					display: inline-block;
 					height: 100%;
-					overflow: hidden;
+					vertical-align: middle;
+				}
+				img {
+					max-width: 100%;
+					min-height: 100%;
+					vertical-align: middle;
 				}
 				&-more {
 					&:before {
@@ -551,11 +563,13 @@
 					bottom: 0;
 					width: 100%;
 					height: 80px;
+					padding-left: 5px;
 					background: rgba(0, 0 , 0, 0.7);
 					p {
 						margin: 5px;
 						font-size: 12px;
 						color: #FFF;
+						text-align: left;
 					}
 					a {
 						color: #FFF;
@@ -564,7 +578,7 @@
 						font-size: 12px;
 						font-family: $r;
 						padding: 5px;
-						margin: 5px 0 0 5px;
+						margin: 5px 0 5px 5px;
 						display: block;
 						float: left;
 						@include background-clip(padding-box);
@@ -596,26 +610,31 @@
 				position: relative;
 				display: block;
 				float: left;
+				overflow: hidden;
+				width: 100%;
 				p {
 					color: #6D585C;
-					font-size: 12px;
-					margin: 5px;
+					font-size: 16px;
+					font-family: $b;
+					padding: 10px 5px 10px 10px;
+					border-top: 1px solid #dadada;
+					outline: none;
+					margin: 0 0 -1px;
+					
 				}
 				&-price {
 					display: block;
-					height: 25px;
-					width: 100%;
+					height: 30px;
+					width: 105%;
 					float: left;
-					overflow: hidden;
-					background-color: $o;
-					border-top: 2px solid #f4cbb9;
+					overflow: hidden;					
 					&_old {
 						display: block;
 						float: left;
-						width: 50%;
+						width: 60%;
 						p {
 							margin: 0;
-							line-height: 25px;
+							line-height: 20px;
 							padding-left: 10px;
 							font-size: 12px;
 							font-family: $b;
@@ -624,24 +643,23 @@
 					&_new {
 						display: block;
 						float: left;
-						width: 50%;
+						width: 40%;
 						overflow: hidden;
-						background-color: #fff;
-						-webkit-transform: skew(-20deg);
-						-moz-transform: skew(-20deg);
-						-o-transform: skew(-20deg);
-						padding-bottom: 30px;
+						background-color: $o;
+						-webkit-transform: skew(25deg);
+						-moz-transform: skew(25deg);
+						-o-transform: skew(25deg);
 						p {
 							margin: 0;
 							display: block;
 							text-align: right;
-							background-color: $o;
+							//background-color: $o;
 							color: #FFF;
-							padding-right: 10px;
-							line-height: 25px;
-							-webkit-transform: skew(20deg);
-							-moz-transform: skew(20deg);
-							-o-transform: skew(20deg);
+							padding-right: 20px;
+							//line-height: 25px;
+							-webkit-transform: skew(-25deg);
+							-moz-transform: skew(-25deg);
+							-o-transform: skew(-25deg);
 							font-size: 16px;
 							font-family: $b;
 						}
@@ -649,7 +667,7 @@
 				}
 			}
 			&:hover {					
-				.singleContent__deals__block-img-more {
+				.deals__block-img-more {
 					display: block;
 				}					
 			}	
@@ -657,9 +675,10 @@
 }
 
 .news {
-	display: block;
 	position: relative;
 	padding: 50px 0;
+	width: 100%;
+	display: inline-block;
 	@include after_right();
 	&__block {
 		display: block;
