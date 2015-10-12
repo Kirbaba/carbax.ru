@@ -95,3 +95,7 @@ $( ".header--request--open" ).click(function() {
 $( ".menu-open-flag" ).click(function() {
   $(".side-nav").slideToggle('slow');
 });
+
+$( ".header--perscab" ).click(function() {
+  $(".cab-nav").slideToggle('slow');
+});

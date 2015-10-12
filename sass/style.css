@@ -476,6 +476,33 @@ ul {
       filter: grayscale(0%);
       filter: gray;
       /* IE 6-9 */ }
+  .header .cab {
+    position: relative;
+    display: block;
+    float: left; }
+  .header .cab-nav {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 0;
+    z-index: 99;
+    display: none;
+    width: 161px;
+    top: 40px; }
+    .header .cab-nav__list {
+      margin: 0;
+      padding: 0; }
+      .header .cab-nav__list li + li {
+        border-top: 1px solid rgba(255, 255, 255, 0.25); }
+      .header .cab-nav__list li:hover {
+        background-color: #2B2B2B; }
+    .header .cab-nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 13px; }
 
 /* .header {
 	display: block;
@@ -2106,7 +2133,6 @@ ul {
 .side-nav {
   position: absolute;
   top: 49px;
-  left: -7px;
   width: 104%;
   background: #000;
   color: #fff;
