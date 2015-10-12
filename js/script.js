@@ -87,3 +87,11 @@ $(function() {
 $( ".first__but--but" ).click(function() {
   $(".first-nav").slideToggle('slow');
 });
+
+$( ".header--request--open" ).click(function() {
+  $(".head-nav").slideToggle('slow');
+});
+
+$( ".menu-open-flag" ).click(function() {
+  $(".side-nav").slideToggle('slow');
+});

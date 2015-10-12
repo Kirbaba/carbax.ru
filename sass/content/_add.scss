@@ -256,7 +256,7 @@
 	  &__lines {
 	    display: block;
 	    float: right;
-	    margin-right: 15px;
+	    margin-right: 0;
 	    width: $line-width;
 	    height: $line-height;
 	    background: $line-bg;
@@ -266,16 +266,28 @@
 	  }
 	}
 
-	.main-nav {
+	.menu-open-flag {
+		display: block;
+		float: left;
+		height: 20px;
+		margin-left: 10px;
+		&:hover, &:active {
+			span {
+				background: $o;
+				box-shadow: 0 0.5rem 0 0 $o,
+			                0 1rem 0 0 $o;
+			}
+		}
+	}
+
+	.side-nav {
 	  position: absolute;
 	  top: 49px;
-	  left: 0;
-	  width: 100%;
+	  left: -7px;
+	  width: 104%;
 	  background: #000;
 	  color: #fff;
 	  padding: 0;
-	  transition: transform 0.2s ease;
-	  transform: translateY(-100%);
 	  z-index: 99;
 	  display: none;
 	  
@@ -292,7 +304,9 @@
 	  }
 	  
 	  &__list {
+	  	padding: 0;
 	    @extend %unstyled-list;
+	    
 	    
 	    li + li {
 	      border-top: 1px solid rgba(#fff,0.25);
@@ -304,11 +318,7 @@
 	}
 
 .menu-icon:hover, .menu-icon:active {
-	span {
-		background: $o;
-		box-shadow: 0 0.5rem 0 0 $o,
-	                0 1rem 0 0 $o;
-	}
+	
 }
 
 .addAllServices {
