@@ -90,3 +90,49 @@
 	filter: grayscale($n);
 	filter: gray; /* IE 6-9 */
 }
+
+@mixin orange-check {
+	input[type="checkbox"] {
+	    display:none;
+	}
+	input[type="checkbox"] + label {
+    font-size:16px;
+    font-family: $r;
+	display: block;
+	margin: 0 0 20px 0;
+	}
+	input[type="checkbox"] + label span {
+	    display: inline-block;
+	    width:19px;
+	    height:19px;
+	    margin:-1px 15px 0 0;
+	    vertical-align:middle;
+	    cursor:pointer;
+	    -moz-border-radius:  50%;
+	    border-radius:  50%;
+	}
+
+	input[type="checkbox"] + label span {
+	     background-color: #c6ccd2;
+	}
+
+	input[type="checkbox"]:checked + label span{
+	     background-color: $o;
+	     background-image: url("../img/Check-Icon.png");
+	     background-position: center;
+	     background-repeat: no-repeat;
+	     color: $o;
+	}
+
+	input[type="checkbox"] + label span,
+	input[type="checkbox"]:checked + label span {
+	  -webkit-transition:background-color 0.4s linear;
+	  -o-transition:background-color 0.4s linear;
+	  -moz-transition:background-color 0.4s linear;
+	  transition:background-color 0.4s linear;
+	}
+
+	input[type="checkbox"]:checked + label {
+		color: $o;
+	}	
+}

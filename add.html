@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/ >
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="sass/style.css">
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -177,8 +178,10 @@
 			</div>
 <!-- ___________________Левый сайдбар_______________________ -->
 			<div class="addContent">
-				<input type="text" class="addContent__title" placeholder="Название автосервиса">
-				<input type="text" class="addContent__adress" placeholder="Адрес автосервиса">
+				<label for="addContent__title" class="addContent__title-lb">Адрес автосервиса</label>	
+				<input type="text" class="addContent__title" name="addContent__title" >
+				<label for="addContent__adress"  class="addContent__adress-lb">Адрес автосервиса</label>		
+				<input type="text" name="addContent__adress" class="addContent__adress">
 				<a href="#nowhere" class="addContent__adress-add">+</a>
 				
 				<div class="singleContent__map">
@@ -187,80 +190,330 @@
 
 				<div class="singleContent__desc">					
 					<h3>Время работы</h3>
-					<h4>ПН - ПТ с <input type="text" class="addContent__time"> до <input type="text" class="addContent__time"></h4>
-					<h4>СБ - ВС с <input type="text" class="addContent__time"> до <input type="text" class="addContent__time"></h4>		
-					<h3>Контакты</h3>	
-					<h4>Телефон <input type="text" class="addContent__cont"><a href="#nowhere" class="addContent__cont-add">+</a></h4>
-					<h4>Почта <input type="text" class="addContent__cont"></h4>	
+					<div class="singleContent__desc--line">
+						<div class="weekday">
+							<input type="checkbox" id="checkbox-mo" name="checkbox-mo" />
+							<label for="checkbox-mo"><span></span>Пн</label>
+						</div>
+						<input id="datetimepicker_from-mo" type="text" class="addContent__time"> -
+						<input id="datetimepicker_to-mo" type="text" class="addContent__time">
+						<input type="checkbox" id="round-the-clock-mo" name="round-the-clock-mo"/>
+						<label for="round-the-clock-mo"><span></span>Круглосуточно</label>
+					</div>
+					<div class="singleContent__desc--line">
+						<div class="weekday">
+							<input type="checkbox" id="checkbox-tu" name="checkbox-tu" />
+							<label for="checkbox-tu"><span></span>Вт</label>
+						</div>
+						<input id="datetimepicker_from-tu" type="text" class="addContent__time"> -
+						<input id="datetimepicker_to-tu" type="text" class="addContent__time">
+						<input type="checkbox" id="round-the-clock-tu" name="round-the-clock-tu"/>
+						<label for="round-the-clock-tu"><span></span>Круглосуточно</label>
+					</div>
 
-					<h3>Описание</h3>
-					<textarea name="text" id="addContent__description"  class="addContent__description"></textarea>
+					<div class="singleContent__desc--line">
+						<div class="weekday">
+							<input type="checkbox" id="checkbox-we" name="checkbox-we" />
+							<label for="checkbox-we"><span></span>Ср</label>
+						</div>
+						<input id="datetimepicker_from-we" type="text" class="addContent__time"> -
+						<input id="datetimepicker_to-we" type="text" class="addContent__time">
+						<input type="checkbox" id="round-the-clock-we" name="round-the-clock-we"/>
+						<label for="round-the-clock-we"><span></span>Круглосуточно</label>
+					</div>
+					<div class="singleContent__desc--line">
+						<div class="weekday">
+							<input type="checkbox" id="checkbox-th" name="checkbox-th" />
+							<label for="checkbox-th"><span></span>Чт</label>
+						</div>
+						<input id="datetimepicker_from-th" type="text" class="addContent__time"> -
+						<input id="datetimepicker_to-th" type="text" class="addContent__time">
+						<input type="checkbox" id="round-the-clock-th" name="round-the-clock-th"/>
+						<label for="round-the-clock-th"><span></span>Круглосуточно</label>
+					</div>
+					<div class="singleContent__desc--line">
+						<div class="weekday">
+							<input type="checkbox" id="checkbox-fr" name="checkbox-fr" />
+							<label for="checkbox-fr"><span></span>Пт</label>
+						</div>
+						<input id="datetimepicker_from-fr" type="text" class="addContent__time"> -
+						<input id="datetimepicker_to-fr" type="text" class="addContent__time">
+						<input type="checkbox" id="round-the-clock-fr" name="round-the-clock-fr"/>
+						<label for="round-the-clock-fr"><span></span>Круглосуточно</label>
+					</div>
+					<div class="singleContent__desc--line">
+						<div class="weekday">
+							<input type="checkbox" id="checkbox-sa" name="checkbox-sa" />
+							<label for="checkbox-sa"><span></span>Сб</label>
+						</div>
+						<input id="datetimepicker_from-sa" type="text" class="addContent__time"> -
+						<input id="datetimepicker_to-sa" type="text" class="addContent__time">
+						<input type="checkbox" id="round-the-clock-sa" name="round-the-clock-sa"/>
+						<label for="round-the-clock-sa"><span></span>Круглосуточно</label>
+					</div>
 
+					<div class="singleContent__desc--line">
+						<div class="weekday">
+							<input type="checkbox" id="checkbox-su" name="checkbox-su" />
+							<label for="checkbox-su"><span></span>Вс</label>
+						</div>
+						<input id="datetimepicker_from-su" type="text" class="addContent__time"> -
+						<input id="datetimepicker_to-su" type="text" class="addContent__time">
+						<input type="checkbox" id="round-the-clock-su" name="round-the-clock-su"/>
+						<label for="round-the-clock-su"><span></span>Круглосуточно</label>
+					</div>
 
+					<!-- <h4>ПН - ПТ с <input type="text" class="addContent__time"> до <input type="text" class="addContent__time"></h4>
+					<input type="checkbox" id="checkboxtime1" name="checkbox" /><h4>СБ - ВС с <input type="text" class="addContent__time"> до <input type="text" class="addContent__time"></h4>		 -->
+					
+					<div class="singleContent__desc--contacts">
+						<h3>Контакты</h3>	
+						<div class="singleContent__desc--line">
+							<label for="website">Web-сайт</label>
+							<input type="text" class="addContent__cont" name="website">
+						</div>
+						<div class="singleContent__desc--line">
+							<label for="phonenumber">Телефон</label>
+							<input type="text" class="addContent__cont" name="phonenumber">							
+						</div>
+						<div class="singleContent__desc--line">
+							<label for="phonenumber_last"></label>
+							<input type="text" class="addContent__cont" name="phonenumber_last">
+							<a href="#nowhere" class="addContent__cont-add">+</a>
+						</div>
+						<div class="singleContent__desc--line">
+							<label for="mailadress">Почта</label>
+							<input type="text" class="addContent__cont" name="mailadress">
+							
+						</div>
+					</div>
+
+					<div class="singleContent__desc--carbrands">
+						<h3>Марки автомобилей</h3>
+						<input type="checkbox" id="audi-brand" name="audi" />
+						<label for="audi-brand"><span></span>Audi</label>
+
+						<input type="checkbox" id="brand-bmw" name="checkbox-sa" />
+						<label for="brand-bmw"><span></span>BMW</label>
+
+						<input type="checkbox" id="brand-kia" name="checkbox-sa" />
+						<label for="brand-kia"><span></span>KIA</label>
+
+						<input type="checkbox" id="brand-ford" name="checkbox-sa" />
+						<label for="brand-ford"><span></span>FORD</label>
+
+						<input type="checkbox" id="brand-toyota" name="checkbox-sa" />
+						<label for="brand-toyota"><span></span>TOYOTA</label>
+
+						<input type="checkbox" id="brand-shkoda" name="checkbox-sa" />
+						<label for="brand-shkoda"><span></span>SKODA</label>
+
+						<input type="checkbox" id="brand-nissan" name="checkbox-sa" />
+						<label for="brand-nissan"><span></span>NISSAN</label>
+
+						<input type="checkbox" id="brand-audi" name="audi" />
+						<label for="brand-audi"><span></span>Audi</label>
+
+						<input type="checkbox" id="brand-lada" name="checkbox-sa" />
+						<label for="brand-lada"><span></span>LADA</label>
+
+						<input type="checkbox" id="brand-reno" name="checkbox-sa" />
+						<label for="brand-reno"><span></span>RENO</label>
+
+						<input type="checkbox" id="brand-pego" name="checkbox-sa" />
+						<label for="brand-pego"><span></span>PEGO</label>
+
+						<input type="checkbox" id="brand-lexus" name="checkbox-sa" />
+						<label for="brand-lexus"><span></span>LEXUS</label>
+
+						<input type="checkbox" id="brand-suzuki" name="checkbox-sa" />
+						<label for="brand-suzuki"><span></span>SUZUKI</label>
+
+						<input type="checkbox" id="brand-honda" name="checkbox-sa" />
+						<label for="brand-honda"><span></span>HONDA</label>
+
+						<input type="checkbox" id="audi-brand2" name="audi" />
+						<label for="audi-brand2"><span></span>Audi</label>
+
+						<input type="checkbox" id="brand-lada2" name="checkbox-sa" />
+						<label for="brand-lada2"><span></span>LADA</label>
+
+						<input type="checkbox" id="brand-reno2" name="checkbox-sa" />
+						<label for="brand-reno2"><span></span>RENO</label>
+
+						<input type="checkbox" id="brand-pego2" name="checkbox-sa" />
+						<label for="brand-pego2"><span></span>PEGO</label>
+
+						<input type="checkbox" id="brand-lexus2" name="checkbox-sa" />
+						<label for="brand-lexus2"><span></span>LEXUS</label>
+
+						<input type="checkbox" id="brand-suzuki2" name="checkbox-sa" />
+						<label for="brand-suzuki2"><span></span>SUZUKI</label>
+
+						<input type="checkbox" id="brand-honda2" name="checkbox-sa" />
+						<label for="brand-honda2"><span></span>HONDA</label>
+					</div>
+
+					<div class="singleContent__desc--works">
+						<h3>Виды работ</h3>
+						<input type="checkbox" id="work1" name="" />
+						<label for="work1"><span></span>Диагностика кондиционера</label>
+
+						<input type="checkbox" id="work2" name="" />
+						<label for="work1"><span></span>Сход/развал</label>
+
+						<input type="checkbox" id="work3" name="" />
+						<label for="work3"><span></span>Техническое обслуживание</label>
+
+						<input type="checkbox" id="work4" name="" />
+						<label for="work4"><span></span>Замена масла</label>
+
+						<input type="checkbox" id="work5" name="" />
+						<label for="work5"><span></span>Слесарные работы</label>
+
+						<input type="checkbox" id="work6" name="" />
+						<label for="work6"><span></span>Кузовные работы</label>
+
+						<input type="checkbox" id="work7" name="" />
+						<label for="work7"><span></span>Обслуживание кондиционера</label>
+
+						<input type="checkbox" id="work8" name="" />
+						<label for="work8"><span></span>Диагностика кондиционера</label>
+
+						<input type="checkbox" id="work9" name="" />
+						<label for="work9"><span></span>Ремонт выхлопной системы</label>
+
+						<input type="checkbox" id="work10" name="" />
+						<label for="work10"><span></span>Ремонт двигателя</label>
+
+						<input type="checkbox" id="work11" name="" />
+						<label for="work11"><span></span>Ремонт кондиционеров</label>
+
+						<input type="checkbox" id="work12" name="" />
+						<label for="work12"><span></span>Ремонт и диагностика АКПП</label>
+
+						<input type="checkbox" id="work13" name="" />
+						<label for="work13"><span></span>Ремонт электрооборудования</label>
+
+						<input type="checkbox" id="work14" name="" />
+						<label for="work14"><span></span>Установка аудио/видео оборудования</label>
+
+						<input type="checkbox" id="work15" name="" />
+						<label for="work15"><span></span>Установка электронных охранных систем</label>
+
+						<input type="checkbox" id="work16" name="" />
+						<label for="work16"><span></span>Проверка технического состояния</label>
+
+						<input type="checkbox" id="work17" name="" />
+						<label for="work17"><span></span>Ремонт стекол</label>
+
+						<input type="checkbox" id="work18" name="" />
+						<label for="work18"><span></span>Диагностика двигателя</label>
+
+						<input type="checkbox" id="work19" name="" />
+						<label for="work19"><span></span>Обслуживание кондиционера</label>
+
+						<input type="checkbox" id="work20" name="" />
+						<label for="work20"><span></span>Диагностика тормозной системы</label>
+
+						<input type="checkbox" id="work21" name="" />
+						<label for="work21"><span></span>Диагностика ходовой</label>
+
+						<input type="checkbox" id="work22" name="" />
+						<label for="work22"><span></span>Ремонт и диагностика МКПП</label>
+
+						<input type="checkbox" id="work23" name="" />
+						<label for="work23"><span></span>Ремонт выхлопных систем</label>
+
+						<input type="checkbox" id="work24" name="" />
+						<label for="work24"><span></span>Ремонт гидроусилителя руля</label>
+					</div>
+					
+					<div class="singleContent__desc--credit">
+						<h3>Кредит</h3>
+						<input type="radio" id="radio" name="radio-credit" />
+						<label for="radio"><span></span>Нет</label>
+
+						<input type="radio" id="radio-yes" name="radio-credit" />
+						<label for="radio-yes"><span></span>Есть</label>
+					</div>
+					<div class="singleContent__desc--testdrive">
+						<h3>Тест-драйв</h3>
+						<input type="radio" id="testdrive-no" name="radio-test" />
+						<label for="testdrive-no"><span></span>Нет</label>
+
+						<input type="radio" id="testdrive-yes" name="radio-test" />
+						<label for="testdrive-yes"><span></span>Есть</label>
+					</div>
+					<div class="singleContent__desc--partsforsale">
+						<h3>Продажа запчастей</h3>
+						<input type="radio" id="partsforsale-no" name="radio-parts" />
+						<label for="partsforsale-no"><span></span>Нет</label>
+
+						<input type="radio" id="partsforsale-yes" name="radio-parts" />
+						<label for="partsforsale-yes"><span></span>Есть</label>
+					</div>
+
+					<div class="singleContent__desc--accept">
+						<h3>Принимаем</h3>
+						<input type="checkbox" id="Low" name="" />
+						<label for="Low"><span></span>Юридическое лицо</label>
+
+						<input type="checkbox" id="Fiz" name="" />
+						<label for="Fiz"><span></span>Частное лицо</label>
+					</div> 
+
+					
 					<div class="singleContent__services">
 					<div class="singleContent__services-comfort">
 						<h3>Зона комфорта</h3>
 						<div class="singleContent__services-comfort-block">
-							<i class="icon__bankomat"></i>
+							<i class="icon icon__bankomat"></i>
 							<h4>Банкомат</h4>
 							<input type="checkbox" value="None" id="bankomat" name="check" checked />
   							<label for="bankomat"></label>
 						</div>
 						<div class="singleContent__services-comfort-block">
-							<i class="icon__cafe"></i>
+							<i class="icon icon__cafe"></i>
 							<h4>Кафе</h4>
 							<input type="checkbox" value="None" id="cafe" name="check" checked />
   							<label for="cafe"></label>
 						</div>
 						<div class="singleContent__services-comfort-block">
-							<i class="icon__wc"></i>
+							<i class="icon icon__wc"></i>
 							<h4>Туадет</h4>
 							<input type="checkbox" value="None" id="wc" name="check" checked />
   							<label for="wc"></label>
 						</div>
 						<div class="singleContent__services-comfort-block">
-							<i class="icon__wifi"></i>
+							<i class="icon icon__wifi"></i>
 							<h4>Wi-Fi</h4>
 							<input type="checkbox" value="None" id="wifi" name="check" checked />
   							<label for="wifi"></label>
 						</div>
 					</div>					
 				</div>
-				<div class="singleContent__services-admit">
-						<h3>Принимаем</h3>
-						<div class="singleContent__services-admit-block">
-							<i class="icon__ur"></i>
-							<h4>Юридическое лицо</h4>
-							<input type="checkbox" value="None" id="ur" name="check" checked />
-  							<label for="ur"></label>
-						</div>
-						<div class="singleContent__services-admit-block">
-							<i class="icon__cp"></i>							
-							<h4>Частное лицо</h4>
-							<input type="checkbox" value="None" id="cp" name="check" checked />
-  							<label for="cp"></label>
-						</div>
-					</div>
+		
 				</div>
 				<div class="singleContent__worksWith">
 					<h3>Работаем</h3>
 					<div class="singleContent__worksWith-block">
 						<h4>С грузовыми авто</h4>
 						<img src="img/gruz.png" alt="">
-						<input type="checkbox" value="None" id="gruz" name="check" checked />
-  						<label for="gruz"></label>
+						<input type="checkbox" id="gruz" name="" />
+						<label for="gruz"><span></span></label>
 					</div>
 					<div class="singleContent__worksWith-block">
 						<h4>С легковыми авто</h4>
 						<img src="img/sedan.png" alt="">
-						<input type="checkbox" value="None" id="sedan" name="check" checked />
-  						<label for="sedan"></label>
+						<input type="checkbox" id="sedan" name="check"/>
+  						<label for="sedan"><span></span></label>
 					</div>
 					<div class="singleContent__worksWith-block">
 						<h4>С мототехникой</h4>
 						<img src="img/velo.png" alt="">
-						<input type="checkbox" value="None" id="velo" name="check" checked />
-  						<label for="velo"></label>
+						<input type="checkbox" id="velo" name="check" />
+  						<label for="velo"><span></span></label>
 					</div>
 				</div>
 			</div>
@@ -347,6 +600,8 @@
 <!-- ___________________ФУТЕР_______________________ -->
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<script src="js/build/jquery.datetimepicker.full.min.js"></script>
+	<script src="js/datapic.js"></script>
 	<script src='js/script.js'></script>
 </body>
 </html>
