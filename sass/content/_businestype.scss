@@ -1,0 +1,27 @@
+.main-container {
+	@extend .singleContent;
+	.busines-type {
+		h3 {
+			text-transform: uppercase;
+		}
+		&--link {
+			display: block;
+			float: left;
+			width: 40%;
+			margin-right: 5%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			position: relative;
+			line-height: 63px;
+			color: #1B1B1B;
+			@include transition (0.4s);
+			&:hover {
+				color: #1B1B1B;
+				text-decoration: underline;
+				.icon_b {
+					background-color: darken($o, 10%);
+				}
+			}
+		}
+	}
+}

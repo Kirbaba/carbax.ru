@@ -120,4 +120,70 @@
 		background-repeat: no-repeat;
 		background-position: 50%;		
 	}
+	&_b {
+		display: block;
+		float: left;
+		position: relative;
+		background-repeat: no-repeat;
+		margin-right: 25px;
+		width: 63px;
+		height: 63px;
+		@include border-radius(50%);
+		@include background-clip(padding-box);
+		background-color: #ff6b00;
+		background-position: 50% 50%;
+		@include transition(0.4s);
+		&_autosalon {			
+			background-image: url('../img/autosalon.png');
+		}
+		&_shinomontaj {
+			background-image: url('../img/shinomontaj.png');
+		}
+		&_shiny_discki {
+			background-image: url('../img/shiny_discki.png');
+		}
+		&_evacuator {			
+			background-image: url('../img/evacuator.png');
+		}
+		&_tuning {
+			background-image: url('../img/tuning.png');
+		}
+		&_autoschool {
+			background-image: url('../img/autoschool.png');
+		}
+		&_strah {
+			background-image: url('../img/strah.png');
+		}
+		&_zapravka {
+			background-image: url('../img/zapravka.png');
+		}
+
+		&_avtomoyka {
+			background-image: url('../img/avtomoyka.png');
+		}
+		&_autoserv {
+			background-image: url('../img/autoserv.png');
+		}
+		&_avtostore {
+			background-image: url('../img/avtostore.png');
+		}
+		&_avtorazbor {
+			background-image: url('../img/avtorazbor.png');
+		}
+	}
+}
+.counter {
+	display: block;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	line-height: 25px;
+	width: 25px;
+	height: 25px;
+	@include border-radius(50%);
+	@include background-clip(padding-box);
+	background-color: #191919;
+	color: #FFF;
+	font-family: $l;
+	text-align: center;
 }
