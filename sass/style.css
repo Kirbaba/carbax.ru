@@ -153,7 +153,8 @@ ul {
   background-position: 50% 50%;
   display: block;
   float: left;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-right: 5px; }
   .icon__cafe, .icon__ur, .icon__cp {
     background-image: url("../img/cafe-1.png");
     display: block;
@@ -167,6 +168,22 @@ ul {
     float: left; }
   .icon__wifi {
     background-image: url("../img/wifi-1.png");
+    display: block;
+    float: left; }
+  .icon__shiny {
+    background-image: url("../img/shiny.png");
+    display: block;
+    float: left; }
+  .icon__postpay {
+    background-image: url("../img/postpay.png");
+    display: block;
+    float: left; }
+  .icon__store {
+    background-image: url("../img/store.png");
+    display: block;
+    float: left; }
+  .icon__coffemachine {
+    background-image: url("../img/coffemachine.png");
     display: block;
     float: left; }
   .icon__ur {
@@ -2129,6 +2146,10 @@ ul {
   resize: none;
   margin-top: 0;
   padding: 10px; }
+.addContent .singleContent__services-comfort-block i {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px; }
 .addContent .singleContent__services-comfort-block input[type="checkbox"] {
   display: none; }
 .addContent .singleContent__services-comfort-block input[type="checkbox"] + label {
@@ -2136,17 +2157,22 @@ ul {
   text-transform: lowercase;
   font-family: "HelveticaNeueCyrMedium";
   display: inline-block;
-  margin: 20px 0 20px;
-  width: 100%; }
+  margin: 0;
+  width: 100%;
+  line-height: 22px; }
 .addContent .singleContent__services-comfort-block input[type="checkbox"] + label span {
-  display: block;
+  display: inline-block;
   width: 19px;
   height: 19px;
   margin: -1px auto 0;
   vertical-align: middle;
   cursor: pointer;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin-left: 10px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%); }
 .addContent .singleContent__services-comfort-block input[type="checkbox"] + label span {
   background-color: #c6ccd2; }
 .addContent .singleContent__services-comfort-block input[type="checkbox"]:checked + label span {
@@ -2154,7 +2180,18 @@ ul {
   background-image: url("../img/Check-Icon.png");
   background-position: center;
   background-repeat: no-repeat;
-  color: #ff6b00; }
+  color: #ff6b00;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -ms-filter: grayscale(0); }
+.addContent .singleContent__services-comfort-block input[type="checkbox"]:checked + label i {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -ms-filter: grayscale(0); }
+.addContent .singleContent__services-comfort-block input[type="checkbox"] + label i {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%); }
 .addContent .singleContent__services-comfort-block input[type="checkbox"] + label span,
 .addContent .singleContent__services-comfort-block input[type="checkbox"]:checked + label span {
   -webkit-transition: background-color 0.4s linear;
