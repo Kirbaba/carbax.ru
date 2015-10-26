@@ -22,8 +22,8 @@
 }
 
 .icon {
-	width: 22px;
-	height: 22px;
+	width: 27px;
+	height: 29px;
 	background-position: 50% 50%;
 	display: block;
 	float: left;
@@ -77,6 +77,29 @@
 		float: left;	
 	}
 
+	&__payment {
+		background-image: url('../img/payment.png');
+		display: block;	
+		float: left;	
+	}
+
+	&__parking {
+		background-image: url('../img/parking.png');
+		display: block;	
+		float: left;	
+	}
+
+	&__terminal {
+		background-image: url('../img/terminal.png');
+		display: block;	
+		float: left;	
+	}
+
+	&__restzone {
+		background-image: url('../img/restzone.png');
+		display: block;	
+		float: left;	
+	}
 	&__ur {
 		@extend .icon__cafe;
 		background-image: url('../img/ur.png');
