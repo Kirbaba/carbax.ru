@@ -1,3 +1,11 @@
+.fleamarket {
+	display: block;
+	width: 100%;
+	padding-bottom: 0;
+	&:after {
+		content: none;
+	}
+}
 .fleamarket__search {
     margin-bottom: -4px;
     z-index: 9;
@@ -109,7 +117,75 @@
 		background-color: $o;
 		color: #FFF;
 		@include box-shadow(inset 0, 2px, 4px, rgba(0,0,1,.43));
+	}
+}
 
+.fleamarket__vip {
+	display: block;
+	width: 100%;
+	position: relative;
+	h2 {
+		color: #FFF;
+		text-align: center;
+		background-color: #0C4370;
+		font-size: 18px;
+		padding: 10px 0;
+		margin: 15px 0;
+	}
+	&__item {
+		display: inline-block;
+		position: relative;
+		width: 210px;
+		margin: 15px 45px 15px 0;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		&--img {
+			height: 154px;
+			width: 100%;
+			display: block;
+			position: relative;
+			background-color: #BABABA;
+			@include overflow-img;
+		}
+		&--desc {
+			display: block;
+			position: relative;
+			a {
+				color: #0C4370;
+				font-family: $b;
+				font-size: 18px;
+				margin-top: 10px;
+				display: block;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			p {
+				color: #282828;
+				margin: 5px 0;
+			}
+			p.fleamarket__vip--price {
+				font-size: 16px;
+			}
+			p.fleamarket__vip--city {
+				font-size: 14px;
+			}	
+		}
+	}
+	&--marker {
+		display: block;
+		position: absolute;
+		top: -30px;
+		left: -40px;
+		background-color: #ff6b00;
+		color: #FFF;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: "HelveticaNeueCyrBold";
+		padding: 50px 35px 5px;
+		transform: rotate(-45deg);
+		z-index: 99;
 	}
 }
 
