@@ -2911,7 +2911,8 @@ input[type="checkbox"] + label {
       background-position: 0px 1px;
       cursor: pointer; }
       .fleamarket__ads__item--desc a.fleamarket__ads__item--desc--star--active {
-        background-position: 0 -22px; }
+        background-position: 0 -22px;
+        cursor: pointer; }
     .fleamarket__ads__item--desc a.fleamarket__ads__item--desc--title {
       color: #0C4370;
       font-family: "HelveticaNeueCyrBlack";
@@ -2937,5 +2938,54 @@ input[type="checkbox"] + label {
       color: #4D4D4D; }
   .fleamarket__ads__item--fixed {
     background-color: #FFF794; }
+
+.pagination-box {
+  display: block;
+  float: right;
+  position: relative;
+  color: #373737; }
+  .pagination-box p {
+    font-size: 16px;
+    padding-left: 10px;
+    font-family: "HelveticaNeueCyrBold"; }
+  .pagination-box ul li {
+    display: block;
+    float: left;
+    margin: 0; }
+    .pagination-box ul li a {
+      display: inline-block;
+      border: 1px solid #C6CCD2;
+      font-family: "HelveticaNeueCyrMedium";
+      height: 42px;
+      font-size: 14px;
+      color: #373737;
+      line-height: 42px; }
+      .pagination-box ul li a:hover {
+        -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.2); }
+    .pagination-box ul li .pagination-box--butt {
+      width: 137px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      background-color: #fff;
+      text-align: center;
+      margin: 0 10px;
+      color: #373737; }
+    .pagination-box ul li .pagination-box--numbers {
+      width: 44px;
+      margin: 0;
+      text-align: center; }
+      .pagination-box ul li .pagination-box--numbers--active {
+        background-color: #ff6b00;
+        color: #FFF; }
+        .pagination-box ul li .pagination-box--numbers--active:hover {
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
