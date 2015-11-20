@@ -2681,6 +2681,8 @@ input[type="checkbox"] + label {
         font-size: 14px;
         color: #ff6b00;
         padding: 5px 0; }
+        .fleamarket__search--models--list a:hover {
+          text-decoration: underline; }
 
 .fleamarket__sort {
   display: block;
@@ -2961,9 +2963,9 @@ input[type="checkbox"] + label {
       color: #373737;
       line-height: 42px; }
       .pagination-box ul li a:hover {
-        -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-        box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.2); }
+        -webkit-box-shadow: inset 0px 0px 7px 0px rgba(50, 50, 50, 0.2);
+        -moz-box-shadow: inset 0px 0px 7px 0px rgba(50, 50, 50, 0.2);
+        box-shadow: inset 0px 0px 7px 0px rgba(50, 50, 50, 0.2); }
     .pagination-box ul li .pagination-box--butt {
       width: 137px;
       -webkit-border-radius: 2px;
