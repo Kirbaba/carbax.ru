@@ -303,6 +303,7 @@ input[type="checkbox"] + label {
     display: block;
     float: left;
     padding-right: 5px;
+    padding-left: 10px;
     border-style: solid;
     -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(black), to(rgba(0, 0, 0, 0.5))) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(left, black, rgba(0, 0, 0, 0.5)) 1 100%;
