@@ -99,3 +99,7 @@ $( ".menu-open-flag" ).click(function() {
 $( ".header--perscab" ).click(function() {
   $(".cab-nav").slideToggle('slow');
 });
+// Барахолка - звуздочка избранного
+$( ".fleamarket__ads__item--desc--star" ).click(function() {
+  $(this).toggleClass('fleamarket__ads__item--desc--star--active');
+});
