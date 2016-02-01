@@ -67,7 +67,7 @@
 				<h3 class="orange">Автосервисы</h3>
 			</div>
 			<div class="filter--selecter">
-				 <div class="filter--item filter--item--chess">
+			 	<div class="filter--item filter--item--chess">
 					<input type="checkbox" value="None" id="store" name="check"/>
 					<label for="store">
 						<span>
@@ -136,7 +136,7 @@
 						</span>
 					</label>
 				 </div>
-				 
+
 				 <div class="filter--item filter--item--chess">
 					<input type="checkbox" value="None" id="filter_category_select_9" name="category[]">
 					<label for="filter_category_select_9" class="main_category_to_map" service-type="9">
@@ -146,6 +146,7 @@
 						</span>
 					</label>
 				 </div>
+
 				 <div class="filter--item">
 					<input type="checkbox" value="None" id="filter_category_select_10" name="category[]">
 					<label for="filter_category_select_10" class="main_category_to_map" service-type="10">
@@ -155,6 +156,7 @@
 						</span>
 					</label>
 				 </div>
+
 				 <div class="filter--item filter--item--chess">
 					<input type="checkbox" value="None" id="filter_category_select_11" name="category[]">
 					<label for="filter_category_select_11" class="main_category_to_map" service-type="11">
@@ -164,6 +166,7 @@
 						</span>
 					</label>
 				 </div>
+
 				 <div class="filter--item">
 					<input type="checkbox" value="None" id="filter_category_select_12" name="category[]">
 					<label for="filter_category_select_12" class="main_category_to_map" service-type="12">
@@ -173,6 +176,7 @@
 						</span>
 					</label>
 				 </div>
+
 				 <div class="filter--item filter--item--chess">
 					<input type="checkbox" value="None" id="filter_category_select_13" name="category[]">
 					<label for="filter_category_select_13" class="main_category_to_map" service-type="13">
@@ -182,11 +186,202 @@
 						</span>
 					</label>
 				 </div>
-			</div>
-				
+			</div>	
+
+			<div class="filter__map">
+				<div id="map_canvas" style="width:100%; height:100%"></div>
+				<div class="filter__map--checklist">
+					<input type="checkbox" id="checkbox01" name="checkbox" />
+  					<label for="checkbox01"><span></span>Клиент</label>
+
+  					<input type="checkbox" id="checkbox02" name="checkbox" />
+  					<label for="checkbox02"><span></span>Автосервис</label>
+
+  					<input type="checkbox" id="checkbox03" name="checkbox" />
+  					<label for="checkbox03"><span></span>Автомойка</label>
+
+					<input type="checkbox" id="checkbox04" name="checkbox" />
+  					<label for="checkbox04"><span></span>Автотюнинг</label>
+
+  					<input type="checkbox" id="checkbox05" name="checkbox" />
+  					<label for="checkbox05"><span></span>Шиномонтаж</label>
+
+  					<input type="checkbox" id="checkbox06" name="checkbox" />
+  					<label for="checkbox06"><span></span>Эвакуатор</label>
+
+					<input type="checkbox" id="checkbox07" name="checkbox" />
+  					<label for="checkbox07"><span></span>Подбор запчастей</label>
+
+  					<input type="checkbox" id="checkbox08" name="checkbox" />
+  					<label for="checkbox08"><span></span>Подбор дисков</label>
+
+					<input type="checkbox" id="checkbox09" name="checkbox" />
+  					<label for="checkbox09"><span></span>Авторынок</label>
+
+  					<input type="checkbox" id="checkbox10" name="checkbox" />
+  					<label for="checkbox10"><span></span>Автоновости</label>
+
+  					<input type="checkbox" id="checkbox11" name="checkbox" />
+  					<label for="checkbox11"><span></span>Еще что-то</label>
+				</div>
+			</div>			
 		</div> 
 	</section>
 
+	<div class="contain">
+		<section class="search">		
+			<div class="search--topline">
+				<img src="img/logo2.png" alt="">
+				<h3 class="orange">Продажа авто и запчастей</h3>
+			</div
+			<form action="/flea_market/default/search">
+				<div class="filter__searchline">
+					<select class="prodTypeSearch" name="prod_type">
+						<option value="">Что ищите?</option>
+						<option value="2">Транспорт</option>
+						<option value="1">Запчасти</option>
+						<option value="3">Шины</option>
+						<option value="4">Диски</option>
+						<option value="5">Прочее</option>
+					</select>                                    
+					<input value="" type="text" name="search" class="filter__searchline--search" placeholder="Поиск по объявлениям">
+
+					<select class="regionSearch" name="region">
+						<option value="">Регион</option>
+						<option value="34">Алтайский край</option>
+						<option value="54">Амурская область</option>
+						<option value="50">Архангельская область</option>
+						<option value="75">Астраханская область</option>
+						<option value="42">Белгородская область</option>
+						<option value="53">Брянская область</option>
+						<option value="3">Винницкая область</option>
+						<option value="58">Владимирская область</option>
+						<option value="71">Волгоградская область</option>
+						<option value="29">Вологодская область</option>
+						<option value="11">Волынская область</option>
+						<option value="66">Воронежская область</option>
+						<option value="20">Днепропетровская область</option>
+						<option value="21">Донецкая область</option>
+						<option value="59">Еврейская автономная область</option>
+						<option value="2">Житомирская область</option>
+						<option value="82">Забайкальский край</option>
+						<option value="16">Закарпатская область</option>
+						<option value="22">Запорожская область</option>
+						<option value="15">Ивано-Франковская область</option>
+						<option value="88">Ивановская область</option>
+						<option value="47">Иркутская область</option>
+						<option value="46">Калининградская область</option>
+						<option value="36">Калужская область</option>
+						<option value="61">Камчатский край</option>
+						<option value="74">Кемеровская область</option>
+						<option value="10">Киев</option>
+						<option value="4">Киевская область</option>
+						<option value="9">Кировоградская область</option>
+						<option value="81">Кировская область</option>
+						<option value="93">Костромская область</option>
+						<option value="41">Краснодарский край</option>
+						<option value="80">Красноярский край</option>
+						<option value="26">Крым</option>
+						<option value="94">Курганская область</option>
+						<option value="95">Курская область</option>
+						<option value="45">Ленинградская область</option>
+						<option value="91">Липецкая область</option>
+						<option value="19">Луганская область</option>
+						<option value="13">Львовская область</option>
+						<option value="97">Магаданская область</option>
+						<option value="105">Москва</option>
+						<option value="39">Московская область</option>
+						<option value="67">Мурманская область</option>
+						<option value="99">Ненецкий автономный округ</option>
+						<option value="38">Нижегородская область</option>
+						<option value="23">Николаевская область</option>
+						<option value="70">Новгородская область</option>
+						<option value="78">Новосибирская область</option>
+						<option value="25">Одесская область</option>
+						<option value="104">Омская область</option>
+						<option value="35">Оренбургская область</option>
+						<option value="102">Орловская область</option>
+						<option value="83">Пензенская область</option>
+						<option value="52">Пермский край</option>
+						<option value="7">Полтавская область</option>
+						<option value="43">Приморский край</option>
+						<option value="79">Псковская область</option>
+						<option value="100">Республика Адыгея</option>
+						<option value="40">Республика Алтай</option>
+						<option value="60">Республика Башкортостан</option>
+						<option value="33">Республика Бурятия</option>
+						<option value="76">Республика Дагестан</option>
+						<option value="98">Республика Ингушетия</option>
+						<option value="101">Республика Кабардино-Балкария</option>
+						<option value="110">Республика Калмыкия</option>
+						<option value="103">Республика Карачаево-Черкессия</option>
+						<option value="92">Республика Карелия</option>
+						<option value="69">Республика Коми</option>
+						<option value="73">Республика Марий Эл</option>
+						<option value="85">Республика Мордовия</option>
+						<option value="65">Республика Саха (Якутия)</option>
+						<option value="57">Республика Северная Осетия (Алания)</option>
+						<option value="62">Республика Татарстан</option>
+						<option value="96">Республика Тыва (Тува)</option>
+						<option value="55">Республика Удмуртия</option>
+						<option value="32">Республика Хакасия</option>
+						<option value="49">Республика Чечня</option>
+						<option value="56">Республика Чувашия</option>
+						<option value="12">Ровненская область</option>
+						<option value="30">Ростовская область</option>
+						<option value="87">Рязанская область</option>
+						<option value="90">Самарская область</option>
+						<option value="106">Санкт-Петербург</option>
+						<option value="37">Саратовская область</option>
+						<option value="63">Сахалинская область</option>
+						<option value="51">Свердловская область</option>
+						<option value="27">Севастополь</option>
+						<option value="28">Смоленская область</option>
+						<option value="48">Ставропольский край</option>
+						<option value="6">Сумская область</option>
+						<option value="86">Тамбовская область</option>
+						<option value="72">Тверская область</option>
+						<option value="14">Тернопольская область</option>
+						<option value="107">Томская область</option>
+						<option value="64">Тульская область</option>
+						<option value="109">Тюменская область</option>
+						<option value="108">Ульяновская область</option>
+						<option value="44">Хабаровский край</option>
+						<option value="84">Ханты-Мансийский автономный округ</option>
+						<option value="18">Харьковская область</option>
+						<option value="24">Херсонская область</option>
+						<option value="1">Хмельницкая область</option>
+						<option value="77">Челябинская область</option>
+						<option value="8">Черкасская область</option>
+						<option value="5">Черниговская область</option>
+						<option value="17">Черновицкая область</option>
+						<option value="68">Чукотский автономный округ</option>
+						<option value="89">Ямало-Ненецкий автономный округ</option>
+						<option value="31">Ярославская область</option>
+					</select>                
+					<span class="citySearch"></span>
+
+
+
+					<input type="submit" class="filter__searchline--but filter__searchline--but--search" value="Найти">
+					<input type="button" class="filter__searchline--but filter__searchline--but--onmap" value="На карте">
+				</div>
+
+				<input type="checkbox" id="searchName" name="searchName" />
+				<label for="searchName"><span></span>Искать только в заголовках</label>
+
+				<input type="checkbox" id="newProduct" name="newProduct" />
+				<label for="newProduct"><span></span>Новые</label>
+
+				<input type="checkbox" id="by" name="by" />
+				<label for="by"><span></span>Б/У</label>
+				<div class="paramsSearch">
+
+				</div>
+
+			</form>
+		</section>
+	</div>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='js/script.js'></script>
 </body>

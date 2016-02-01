@@ -452,10 +452,11 @@ a.regHeaderLink {
   display: block;
   float: left;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  padding: 0; }
   .filter:after {
     content: none; }
-  .filter--topline {
+  .filter--topline, .search--topline {
     display: block;
     float: left;
     position: relative;
@@ -467,10 +468,10 @@ a.regHeaderLink {
     box-sizing: border-box;
     height: 50px;
     line-height: 50px; }
-    .filter--topline img {
+    .filter--topline img, .search--topline img {
       vertical-align: sub;
       display: inline-block; }
-    .filter--topline h3 {
+    .filter--topline h3, .search--topline h3 {
       display: inline-block;
       font-size: 23px;
       margin: 0 15px; }
@@ -533,5 +534,138 @@ a.regHeaderLink {
       transition: background-color 0.4s linear; }
     .filter--item input[type="checkbox"]:checked + label {
       color: #ff6b00; }
+  .filter__map {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 450px; }
+    .filter__map--checklist {
+      display: block;
+      float: right;
+      position: absolute;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.79);
+      top: 0;
+      bottom: 0;
+      right: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .filter__map--checklist input[type="checkbox"] {
+        display: none; }
+      .filter__map--checklist input[type="checkbox"] + label {
+        font-size: 16px;
+        font-family: "HelveticaNeueCyrMedium";
+        display: block;
+        margin: 0 0 20px 0; }
+      .filter__map--checklist input[type="checkbox"] + label span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -1px 15px 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+        -moz-border-radius: 50%;
+        border-radius: 50%; }
+      .filter__map--checklist input[type="checkbox"] + label span {
+        background-color: #c6ccd2; }
+      .filter__map--checklist input[type="checkbox"]:checked + label span {
+        background-color: #ff6b00;
+        background-image: url("../img/Check-Icon.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #ff6b00; }
+      .filter__map--checklist input[type="checkbox"] + label span,
+      .filter__map--checklist input[type="checkbox"]:checked + label span {
+        -webkit-transition: background-color 0.4s linear;
+        -o-transition: background-color 0.4s linear;
+        -moz-transition: background-color 0.4s linear;
+        transition: background-color 0.4s linear; }
+      .filter__map--checklist input[type="checkbox"]:checked + label {
+        color: #ff6b00; }
+      .filter__map--checklist input[type="checkbox"] + label {
+        font-size: 15px;
+        font-family: "HelveticaNeueCyrLight";
+        color: #FFF;
+        margin-bottom: 15px; }
+
+.search {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px; }
+  .search input[type="checkbox"] {
+    display: none; }
+  .search input[type="checkbox"] + label {
+    font-size: 16px;
+    font-family: "HelveticaNeueCyrMedium";
+    display: block;
+    margin: 0 0 20px 0; }
+  .search input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 15px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  .search input[type="checkbox"] + label span {
+    background-color: #c6ccd2; }
+  .search input[type="checkbox"]:checked + label span {
+    background-color: #ff6b00;
+    background-image: url("../img/Check-Icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ff6b00; }
+  .search input[type="checkbox"] + label span,
+  .search input[type="checkbox"]:checked + label span {
+    -webkit-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear; }
+  .search input[type="checkbox"]:checked + label {
+    color: #ff6b00; }
+  .search input[type="checkbox"] + label {
+    display: inline-block;
+    font-size: 15px;
+    display: inline-block;
+    font-family: "HelveticaNeueCyrLight";
+    color: #FFF;
+    margin: 10px 15px 10px 0; }
+  .search--topline {
+    padding: 0; }
+  .search .filter__searchline {
+    border: none;
+    font-family: "HelveticaNeueCyrLight"; }
+    .search .filter__searchline select {
+      border: none;
+      height: 45px;
+      outline: none; }
+    .search .filter__searchline--search {
+      border: none;
+      height: 45px;
+      background-color: #D0D0D0;
+      width: 297px;
+      outline: none; }
+    .search .filter__searchline--but {
+      border: none;
+      height: 45px;
+      outline: none; }
+      .search .filter__searchline--but--search {
+        width: 75px; }
+      .search .filter__searchline--but:hover {
+        background-color: #ff6b00;
+        color: #FFF; }
+    .search .filter__searchline .prodTypeSearch {
+      width: 220px; }
+    .search .filter__searchline .regionSearch {
+      width: 237px; }
 
 /*# sourceMappingURL=index.css.map */
