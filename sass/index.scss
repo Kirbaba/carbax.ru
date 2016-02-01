@@ -1,0 +1,167 @@
+@import 'libs/_style';
+@import 'base/_style';
+
+a.regHeaderLink {
+    margin: 0 10px;
+    padding: 3px 5px;
+    @include border-radius(2px);
+    &:last-of-type {
+    	margin-right: 0;
+    }
+    &:hover {
+    	color: #1B1B1B;
+    	background-color: #FF6B00;
+    	text-decoration: none;
+    	width: 57px;
+		height: 20px;
+		background-color: #ff6b00;
+    }
+}
+.loginLinks  {
+	width: 195px;
+}
+
+.initial-screen {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 35px 0;
+	background-image: url('../img/road.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: 50% 50%;
+	&--aside {
+		display: block;
+		float: left;
+		position: relative;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		width: 30%;
+		padding: 0 8%;
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: #FFF;
+			margin-bottom: 10px;
+			display: block;
+			float: left;
+			width: 100%;
+			display: block;
+			height: 135px;
+			position: relative;			
+			&:hover {
+				.initial-screen--icon--1 {
+					background-color: darken(#2bad99, 15%);
+				}
+				.initial-screen--icon--2 {
+					background-color: darken(#ffae00, 15%);
+				}
+				.initial-screen--icon--3 {
+					background-color: darken(#03A80A, 15%);
+				}
+				.initial-screen--icon--4 {
+					background-color: darken(#ED0722, 15%);
+				}
+			}		
+		}
+	
+	}
+	&--icon {
+		display: block;
+		margin: 0 auto 10px;
+		width: 79px;
+		height: 78px;
+		line-height: 78px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		@include transition(.3s);	
+		img {
+			width: 50%;
+			height: auto;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&--1 {
+			background-color: #2bad99;			
+		}
+		&--2 {
+			background-color: #ffae00;
+		}
+		&--3 {
+			background-color: #03A80A;
+		}
+		&--4 {
+			background-color: #ED0722;
+		}
+	}
+	&--center {
+		display: block;
+		float: left;
+		position: relative;
+		width: 40%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		text-align: center;
+	}
+	&--logo {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		text-align: center;
+		margin-bottom: 10px;
+		img {
+			display: inline-block;
+		}
+		h4 {
+			margin: 0;
+			font-size: 16px;
+			color: #FFF;
+			font-family: $th;
+			letter-spacing: 1px;
+		}
+	}
+	&--more {
+		display: inline-block;
+		padding: 10px 30px;
+		font-size: 20px;
+		color: #FFF;
+		@include border-radius(22px);
+		background-color: #000;
+		font-family: $r;
+		margin: 10px 0;
+		position: relative;
+		@include transition(.3s);
+		&:hover {
+			background-color: lighten(#000, 15%);
+		}
+	}
+	&--apply {
+		display: inline-block;
+		color: #FFF;
+		padding: 15px 50px;
+		background-color: #FE6A00;
+		position: relative;
+		@include border-radius(10px);
+		@include background-clip(padding-box);
+		margin: 20px 0;
+		font-size: 18px;
+		font-family: $r;
+		@include transition(.3s);
+		&:hover {
+			background-color: darken(#FE6A00, 10%);
+		}
+	}
+}
