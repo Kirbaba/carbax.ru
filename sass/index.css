@@ -446,6 +446,92 @@ a.regHeaderLink {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear; }
     .initial-screen--apply:hover {
-      background-color: #cb5500; }
+      background-color: #e55f00; }
+
+.filter {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%; }
+  .filter:after {
+    content: none; }
+  .filter--topline {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px; }
+    .filter--topline img {
+      vertical-align: sub;
+      display: inline-block; }
+    .filter--topline h3 {
+      display: inline-block;
+      font-size: 23px;
+      margin: 0 15px; }
+  .filter--item {
+    display: block;
+    float: left;
+    position: relative;
+    width: 16.66667%;
+    height: 130px;
+    text-align: center; }
+    .filter--item--chess {
+      background-color: #2E2E2E;
+      color: #FFF; }
+    .filter--item input[type="checkbox"] {
+      display: none; }
+    .filter--item input[type="checkbox"] + label {
+      font-size: 16px;
+      display: inline-block;
+      text-transform: inherit;
+      margin: 0;
+      width: 100%;
+      margin: 15px 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none; }
+    .filter--item input[type="checkbox"] + label span {
+      display: inline-block;
+      margin: -1px auto 0;
+      vertical-align: middle;
+      cursor: pointer;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      text-align: center; }
+      .filter--item input[type="checkbox"] + label span img {
+        width: 56px;
+        height: 56px; }
+      .filter--item input[type="checkbox"] + label span p {
+        margin: 0; }
+    .filter--item input[type="checkbox"]:checked + label span {
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ff6b00;
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+      -ms-filter: grayscale(0); }
+    .filter--item input[type="checkbox"]:checked + label i {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+      -ms-filter: grayscale(0); }
+    .filter--item input[type="checkbox"] + label i {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -ms-filter: grayscale(100%); }
+    .filter--item input[type="checkbox"] + label span,
+    .filter--item input[type="checkbox"]:checked + label span {
+      -webkit-transition: background-color 0.4s linear;
+      -o-transition: background-color 0.4s linear;
+      -moz-transition: background-color 0.4s linear;
+      transition: background-color 0.4s linear; }
+    .filter--item input[type="checkbox"]:checked + label {
+      color: #ff6b00; }
 
 /*# sourceMappingURL=index.css.map */
