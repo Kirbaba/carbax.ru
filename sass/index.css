@@ -424,7 +424,7 @@ a.regHeaderLink {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear; }
     .initial-screen--more:hover {
-      background-color: #262626; }
+      background-color: #1a1a1a; }
   .initial-screen--apply {
     display: inline-block;
     color: #FFF;
@@ -446,7 +446,7 @@ a.regHeaderLink {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear; }
     .initial-screen--apply:hover {
-      background-color: #e55f00; }
+      background-color: #cb5500; }
 
 .filter {
   display: block;
@@ -594,12 +594,7 @@ a.regHeaderLink {
   display: block;
   float: left;
   position: relative;
-  width: 100%;
-  background-color: #000;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0 15px; }
+  width: 100%; }
   .search input[type="checkbox"] {
     display: none; }
   .search input[type="checkbox"] + label {
@@ -639,6 +634,16 @@ a.regHeaderLink {
     font-family: "HelveticaNeueCyrLight";
     color: #FFF;
     margin: 10px 15px 10px 0; }
+  .search__wrap {
+    display: block;
+    float: left;
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 15px; }
   .search--topline {
     padding: 0; }
   .search .filter__searchline {

@@ -145,7 +145,7 @@ a.regHeaderLink {
 		position: relative;
 		@include transition(.3s);
 		&:hover {
-			background-color: lighten(#000, 15%);
+			background-color: lighten(#000, 10%);
 		}
 	}
 	&--apply {
@@ -161,7 +161,7 @@ a.regHeaderLink {
 		font-family: $r;
 		@include transition(.3s);
 		&:hover {
-			background-color: darken(#FE6A00, 5%);
+			background-color: darken(#FE6A00, 10%);
 		}
 	}
 }
@@ -311,11 +311,7 @@ a.regHeaderLink {
 	float: left;
 	position: relative;
 	width: 100%;
-	background-color: #000;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	padding: 0 15px;	
+		
 	@include orange-check;
 	input[type="checkbox"] + label {
 		display: inline-block;
@@ -325,6 +321,17 @@ a.regHeaderLink {
 		color: #FFF;
 		margin: 10px 15px 10px 0;
 	}	 
+	&__wrap {
+		display: block;
+		float: left;
+		position: relative;
+		background-color: #000;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 0 15px;
+	}
 	&--topline {
 		@extend .filter--topline;
 		padding: 0;
