@@ -456,7 +456,7 @@ a.regHeaderLink {
   padding: 0; }
   .filter:after {
     content: none; }
-  .filter--topline, .search--topline {
+  .filter--topline, .search--topline, .deals--topline, .news--topline {
     display: block;
     float: left;
     position: relative;
@@ -468,10 +468,10 @@ a.regHeaderLink {
     box-sizing: border-box;
     height: 50px;
     line-height: 50px; }
-    .filter--topline img, .search--topline img {
+    .filter--topline img, .search--topline img, .deals--topline img, .news--topline img {
       vertical-align: sub;
       display: inline-block; }
-    .filter--topline h3, .search--topline h3 {
+    .filter--topline h3, .search--topline h3, .deals--topline h3, .news--topline h3 {
       display: inline-block;
       font-size: 23px;
       margin: 0 15px; }
@@ -672,5 +672,130 @@ a.regHeaderLink {
       width: 220px; }
     .search .filter__searchline .regionSearch {
       width: 237px; }
+
+.ads {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%; }
+  .ads h2 {
+    background-color: #000;
+    text-align: center;
+    color: #ff6b00;
+    padding: 10px 0;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    float: left; }
+  .ads__wrap {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0 -5px; }
+  .ads__item {
+    display: block;
+    float: left;
+    position: relative;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 5px;
+    text-decoration: none;
+    margin: 15px 0; }
+    .ads__item--img {
+      display: block;
+      float: left;
+      position: relative;
+      height: 165px;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 10px; }
+      .ads__item--img img {
+        min-width: 100%;
+        height: auto;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    .ads__item--title {
+      font-family: "HelveticaNeueCyrMedium";
+      font-size: 16px;
+      color: #282828; }
+    .ads__item--rating {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0 5px;
+      background-color: #000;
+      color: #FFF;
+      font-size: 16px;
+      font-family: "HelveticaNeueCyrMedium";
+      height: 30px;
+      line-height: 30px; }
+      .ads__item--rating:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: -10px;
+        border-top: 15px solid transparent;
+        border-left: 10px solid #000;
+        border-bottom: 15px solid transparent; }
+
+.deals {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%; }
+  .deals--topline {
+    margin-bottom: 0; }
+    .deals--topline h3 {
+      color: #ff6b00; }
+  .deals__menu {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: #CFCECE; }
+    .deals__menu ul {
+      padding: 0;
+      margin: 0; }
+      .deals__menu ul li {
+        display: block;
+        float: left; }
+        .deals__menu ul li a {
+          display: block;
+          text-decoration: none;
+          color: #0A0A0A;
+          font-size: 15px;
+          padding: 15px 20px; }
+          .deals__menu ul li a:hover, .deals__menu ul li a:focus {
+            background-color: #202020;
+            color: #fff; }
+        .deals__menu ul li a.deals__menu--all {
+          padding: 15px 34px 15px 35px; }
+        .deals__menu ul li a.deals__menu--active {
+          background-color: #202020;
+          color: #fff; }
+  .deals .deals__block-desc-price {
+    border-top: 1px solid #dadada; }
+  .deals .deals__block-desc p {
+    border-top: none; }
+  .deals .deals__block-img {
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada; }
+  .deals .deals__block-desc-price_old p {
+    line-height: 12px; }
+  .deals .deals__block-desc-price_new p {
+    line-height: 10px; }
+
+.news {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 0; }
 
 /*# sourceMappingURL=index.css.map */

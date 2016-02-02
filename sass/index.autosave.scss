@@ -385,13 +385,12 @@ a.regHeaderLink {
 		text-transform: uppercase;
 		width: 100%;
 		margin: 0;
-		float: left;
 	}
 	&__wrap {
 		display: block;
 		float: left;
 		position: relative;
-		margin: 0 -5px;
+		margin: -5px;
 	}
 	&__item {
 		display: block;
@@ -450,79 +449,5 @@ a.regHeaderLink {
 				border-bottom: 15px solid transparent;
 			}
 		}
-	}
-}
-
-.deals {
-	display: block;
-	float: left;
-	position: relative;
-	width: 100%;
-	&--topline {
-		@extend .filter--topline;
-		margin-bottom: 0;
-		h3 {
-			color: $o;
-		}
-	}
-	&__menu {
-		display: block;
-		float: left;
-		position: relative;
-		width: 100%;
-		background-color: #CFCECE;
-		ul {
-			padding: 0;
-			margin: 0;
-			li {
-				display: block;
-				float: left;
-				a {
-					display: block;
-					text-decoration: none;
-					color: #0A0A0A;	
-					font-size: 15px;
-					padding: 15px 20px;	
-					&:hover,&:focus {
-						background-color: #202020;
-						color: #fff;
-					}			
-				}
-				a.deals__menu--all {
-					padding: 15px 34px 15px 35px;
-				}
-				a.deals__menu--active {
-					background-color: #202020;
-					color: #fff;
-				}
-			}
-		}
-	}
-	.deals__block-desc-price {
-		border-top: 1px solid #dadada;
-    }
-    .deals__block-desc p {
-    	border-top: none;
-    }
-    .deals__block-img {
-    	border-bottom: 1px solid #dadada;
-    	border-top: 1px solid #dadada;
-    }
-    .deals__block-desc-price_old p {
-    	line-height: 12px;
-    }
-    .deals__block-desc-price_new p {
-    	line-height: 10px;
-    }
-}
-
-.news {
-	display: block;
-	float: left;
-	position: relative;
-	width: 100%;
-	padding: 0;
-	&--topline {
-		@extend .filter--topline;
 	}
 }
