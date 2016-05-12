@@ -1,0 +1,49 @@
+@import "_fonts";
+
+.promo{
+	display: block;
+	float: left;
+	width: 100%;
+	background-image: ('../img/mountain_one.png');
+	.promo_ad{
+		width: 50%;
+		float: right;
+		display: block;
+		font-family: $ncb;
+		a{
+		text-align: left;
+		color: #000;
+		}
+		h2{
+			font-size: 36px;
+			color: #000;
+			span{
+				color: #ff6b00;
+			}
+		}
+		h3{
+			font-size: 24px;
+			color: #000;
+		}
+		p{
+			font-size: 16px;
+		}
+		.knopka1{
+			display: block;
+			width: 235px;
+			height: 50px;
+			background-color: #ff6b00;
+			border-radius: 5px;
+			text-align: center;
+			line-height: 50px;
+			color: #FFF;
+			font-size: 22px;
+			text-decoration: none;
+		}
+	}
+	.promo_pic{
+		position: absolute;
+		float: left;
+		left: 0;
+	}
+}
