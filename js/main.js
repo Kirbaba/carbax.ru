@@ -22,5 +22,33 @@ $(document).ready(function(){
 		       
 	 	return false;
 	});
+
+
+	$(".owl-carousel").owlCarousel({
+		loop: true,
+		margin: 35,
+		nav : true,
+		navText: true,
+		//pagination : true,
+		items: 1,
+		responsiveClass:false,
+		responsive: {
+			0: {
+				items: 1,
+				nav: true,
+			},
+			600: {
+				items: 1,
+				nav: true
+			},
+			1000: {
+				items: 1,
+				nav: true,
+				loop: true
+			}
+		}
+	});
+
+
 });
 
