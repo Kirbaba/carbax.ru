@@ -1,0 +1,89 @@
+@import "_fonts";
+
+.promo__head{
+	width: 100%;
+	display: block;
+	float: left;
+	height: 430px;
+	background-image: url('../img/fon_header_promo.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	.promo_ad{
+		width: 50%;
+		float: right;
+		display: block;
+		a{
+			font-size: 16px;
+			color: #FFF;
+			font-family: $ncm ;
+		}
+		h2{
+			font-family: $ncb;
+			font-size: 36px;
+   			color: #FFF;
+   			span{
+   				    color: #ff6b00;
+   			}
+		}
+		&_border{
+			width: 605px;
+			height: 187px;
+			opacity: 0.77;
+			background-color: #191919;
+			h3{
+				color: #FFF;
+				font-family: $ncm ;
+				padding-left: 30px;
+				padding-top: 23px;
+				margin: 0;
+				width: 60%;
+			}
+			p{
+				color: #FFF;
+				font-family: $ncm ;
+				padding-left: 30px;
+				padding-top: 30px;
+				margin: 0;
+			}
+		}
+	}
+}
+.promo__advantages{
+	width: 100%;
+	display: block;
+	float: left;
+	margin: 10px 0;
+	&_item{
+		width: 33.3%;
+		float: left;
+		display: block;
+		text-align: center;
+		&_thumb{
+			width: 100%;
+			height: 80px;
+			position: relative;
+			display: block;
+			img{
+				max-width: 100%; 
+				min-height: 100%; 
+				position: absolute; 
+				top: 50%; 
+				-webkit-transform: translate(-50%, -50%); 
+				-moz-transform: translate(-50%, -50%); 
+				-ms-transform: translate(-50%, -50%); 
+				-o-transform: translate(-50%, -50%); 
+				transform: translate(-50%, -50%); 
+			}
+		}
+		&_text{
+			width: 100%;
+			h3{
+				font-family: $ncm;
+				font-size: 24px;
+				text-align: center;
+			}
+		}
+	}
+}
