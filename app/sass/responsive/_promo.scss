@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1024px) {
+	.promo__advantages{
+		&_item{
+			&:after{
+		    top: 25px;
+		    left:175px;
+			}
+			&:before{
+			    top: 25px;
+			    right: 165px;
+			}
+		}
+	}
+	.promo__tab{
+		label{
+		   width: 21.3%;
+		   border-right:none;
+		}
+	}
+	.promo__head{
+		.promo_ad{
+			&_border{
+				width: 100%;
+				height: 230px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 980px) {
+	
+}
+
+@media only screen and (max-width: 770px) {
+	
+}
+@media only screen and (max-width: 736px) {
+	
+
+}
+@media only screen and (max-width: 500px) {
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+}
