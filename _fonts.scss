@@ -1,6 +1,8 @@
-$ncm 'HelveticaNeueCyrMedium';
-$ncb 'HelveticaNeueCyrBold';
-$ncr 'HelveticaNeueCyrRoman';
+
+$ncm: 'HelveticaNeueCyrMedium';
+$ncb: 'HelveticaNeueCyrBold';
+$ncr: 'HelveticaNeueCyrRoman';
+
 
 @font-face { 
 font-family: 'HelveticaNeueCyrMedium'; 
@@ -26,4 +28,12 @@ url('../fonts/HelveticaNeueCyrRoman.woff2') format('woff2'),
 url('../fonts/HelveticaNeueCyrRoman.woff') format('woff'), 
 url('../fonts/HelveticaNeueCyrRoman.ttf') format('truetype'), 
 url('../fonts/HelveticaNeueCyrRoman.svg') format('svg'); 
+} 
+@font-face { 
+font-family: 'HelveticaNeueCyrLight'; 
+src: url('../fonts/HelveticaNeueCyrLight.eot') format('embedded-opentype'), 
+url('../fonts/HelveticaNeueCyrLight.woff2') format('woff2'), 
+url('../fonts/HelveticaNeueCyrLight.woff') format('woff'), 
+url('../fonts/HelveticaNeueCyrLight.ttf') format('truetype'), 
+url('../fonts/HelveticaNeueCyrLight.svg') format('svg'); 
 } 
