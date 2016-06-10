@@ -31,11 +31,9 @@ body, html {
     background-color: #202020; }
   .header__logo {
     position: relative;
-    width: 50%;
-    float: left; }
-    .header__logo img {
-      margin-left: 32%;
-      margin-top: 34px; }
+    float: left;
+    margin-left: 16%;
+    margin-top: 34px; }
   .header__registratin {
     position: relative;
     width: 50%;
@@ -65,11 +63,12 @@ body, html {
     font-family: "Calibri";
     font-weight: bold;
     font-size: 18px;
+    line-height: 22px;
     text-transform: uppercase;
     margin-top: 50px; }
     .header__vk:hover {
-      background-color: #fff;
-      color: #202020; }
+      color: #202020;
+      text-decoration: none; }
   .header__fb {
     position: relative;
     width: 22px;
@@ -85,10 +84,11 @@ body, html {
     font-family: "Calibri";
     font-weight: bold;
     font-size: 18px;
+    line-height: 22px;
     margin-top: 50px; }
     .header__fb:hover {
-      background-color: #fff;
-      color: #202020; }
+      color: #202020;
+      text-decoration: none; }
   .header__tw {
     position: relative;
     width: 22px;
@@ -104,15 +104,14 @@ body, html {
     line-height: 23px;
     margin-top: 50px; }
     .header__tw:hover {
-      background-color: #fff;
-      color: #202020; }
+      color: #202020;
+      text-decoration: none; }
   .header__g {
     position: relative;
     width: 22px;
     height: 22px;
     float: left;
-    margin: 0px 5px;
-    background-color: #bebebe;
+    margin: 0px 3px;
     text-decoration: none;
     text-align: center;
     text-align: center;
@@ -121,10 +120,7 @@ body, html {
     color: #202020;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 50px; }
-    .header__g:hover {
-      background-color: #fff;
-      color: #202020; }
+    margin-top: 48px; }
   .header__g:after {
     position: absolute;
     content: "";
@@ -150,6 +146,9 @@ body, html {
       position: absolute;
       top: 0px;
       left: 50px; }
+    .header__enter:hover {
+      color: #e85902;
+      text-decoration: none; }
   .header__slider {
     position: relative;
     width: 100%;
@@ -161,7 +160,7 @@ body, html {
     .header__slider--img {
       position: relative;
       width: 100%;
-      height: 555px;
+      height: 646px;
       overflow: hidden; }
       .header__slider--img img {
         max-width: 150%;
@@ -177,7 +176,7 @@ body, html {
       display: block;
       position: relative;
       width: 100%;
-      bottom: 85px;
+      bottom: 101px;
       text-align: center; }
       .header__slider .owl-dots .owl-dot {
         display: inline-block;
@@ -197,7 +196,7 @@ body, html {
       width: 100%;
       height: 205px;
       z-index: 2;
-      top: 188px;
+      top: 253px;
       left: 0px;
       text-align: center; }
       .header__slider--box h1 {
@@ -230,6 +229,88 @@ body, html {
         text-decoration: none;
         margin: 65px auto; }
       .header__slider--box a:hover {
+        color: #f56903;
+        border: 2px solid #f56903; }
+  .header__slider2 {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: -164px; }
+    .header__slider2--item {
+      display: block;
+      position: relative; }
+    .header__slider2--img {
+      position: relative;
+      width: 100%;
+      height: 646px;
+      overflow: hidden; }
+      .header__slider2--img img {
+        max-width: 150%;
+        min-width: 101%;
+        height: auto;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+    .header__slider2 .owl-dots {
+      display: block;
+      position: relative;
+      width: 100%;
+      bottom: 101px;
+      text-align: center; }
+      .header__slider2 .owl-dots .owl-dot {
+        display: inline-block;
+        position: relative;
+        width: 16px;
+        height: 16px;
+        margin: 0 5px;
+        background-color: white;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: 3px solid transparent; }
+      .header__slider2 .owl-dots .active {
+        border: 3px solid #f56903;
+        background-color: transparent; }
+    .header__slider2--box {
+      position: absolute;
+      width: 100%;
+      height: 205px;
+      z-index: 2;
+      top: 253px;
+      left: 0px;
+      text-align: center; }
+      .header__slider2--box h1 {
+        color: white;
+        font-family: Calibri;
+        font-size: 53px;
+        font-weight: bold;
+        line-height: 17px;
+        margin-bottom: 0px; }
+      .header__slider2--box p {
+        color: white;
+        font-family: Calibri;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 32px;
+        margin-top: 27px; }
+      .header__slider2--box a {
+        display: block;
+        width: 229px;
+        height: 57px;
+        border: 2px solid #ddd;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        color: white;
+        font-family: Calibri;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 55px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 65px auto; }
+      .header__slider2--box a:hover {
         color: #f56903;
         border: 2px solid #f56903; }
   .header__navbar {
