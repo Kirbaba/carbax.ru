@@ -29,6 +29,20 @@ body, html {
     height: 105px;
     float: left;
     background-color: #202020; }
+    .header__top--user {
+      display: inline-block;
+      position: relative;
+      margin-left: 45px;
+      margin-top: 42px;
+      height: 26px;
+      padding-left: 35px;
+      line-height: 28px;
+      color: #ff6b00;
+      font-family: "Calibri Light";
+      font-size: 14px;
+      background-image: url("../img/user_icon.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
   .header__logo {
     position: relative;
     float: left;
