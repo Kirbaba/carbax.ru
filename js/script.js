@@ -109,7 +109,7 @@ $('.header__slider').owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
-    autoplay: false,
+    autoplay: true,
     responsive: {
         0: {
             items: 1

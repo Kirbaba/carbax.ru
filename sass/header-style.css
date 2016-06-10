@@ -34,7 +34,7 @@ body, html {
     width: 50%;
     float: left; }
     .header__logo img {
-      padding-left: 214px;
+      margin-left: 20%;
       margin-top: 35px; }
   .header__registratin {
     position: relative;
@@ -49,7 +49,7 @@ body, html {
       line-height: 22px;
       margin-top: 50px;
       margin-right: 10px;
-      margin-left: 167px; }
+      margin-left: 30%; }
   .header__vk {
     position: relative;
     width: 22px;
@@ -165,7 +165,7 @@ body, html {
       overflow: hidden; }
       .header__slider--img img {
         max-width: 150%;
-        min-width: 100%;
+        min-width: 101%;
         height: auto;
         position: relative;
         left: 50%;
@@ -194,11 +194,11 @@ body, html {
         background-color: transparent; }
     .header__slider--box {
       position: absolute;
-      width: 807px;
+      width: 100%;
       height: 205px;
       z-index: 2;
       top: 188px;
-      left: 269px;
+      left: 0px;
       text-align: center; }
       .header__slider--box h1 {
         color: white;
