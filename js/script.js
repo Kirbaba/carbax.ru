@@ -103,3 +103,23 @@ $( ".header--perscab" ).click(function() {
 $( ".fleamarket__ads__item--desc--star" ).click(function() {
   $(this).toggleClass('fleamarket__ads__item--desc--star--active');
 });
+
+/*header-slider*/
+$('.header__slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    autoplay: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+});
+/*close header-slider*/
