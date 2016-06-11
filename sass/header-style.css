@@ -32,7 +32,7 @@ body, html {
     .header__top--user {
       display: inline-block;
       position: relative;
-      margin-left: 45px;
+      margin-left: 25px;
       margin-top: 42px;
       height: 26px;
       padding-left: 35px;
@@ -43,10 +43,118 @@ body, html {
       background-image: url("../img/user_icon.png");
       background-size: contain;
       background-repeat: no-repeat; }
+      .header__top--user:after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 49px;
+        background-image: url("../img/deliver_line.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        right: -15px;
+        top: -13px; }
+    .header__top--cabinet {
+      display: inline-block;
+      position: relative;
+      margin-left: 25px;
+      margin-top: 42px;
+      height: 26px;
+      padding-left: 35px;
+      line-height: 28px;
+      color: #818181;
+      font-family: "Calibri Light";
+      font-size: 14px;
+      background-image: url("../img/settings_icon.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+      .header__top--cabinet:hover {
+        color: #fff;
+        text-decoration: none; }
+      .header__top--cabinet:after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 49px;
+        background-image: url("../img/deliver_line.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        right: -15px;
+        top: -13px; }
+    .header__top--cabinet:nth-of-type(2) {
+      display: inline-block;
+      position: relative;
+      margin-left: 25px;
+      margin-top: 42px;
+      height: 26px;
+      padding-left: 35px;
+      line-height: 28px;
+      color: #818181;
+      font-family: "Calibri Light";
+      font-size: 14px;
+      background-image: url("../img/envelope_icon.png");
+      background-size: 26px;
+      background-position-y: 4px;
+      background-repeat: no-repeat; }
+      .header__top--cabinet:nth-of-type(2) span {
+        color: #ff6b00; }
+      .header__top--cabinet:nth-of-type(2):hover {
+        color: #fff;
+        text-decoration: none; }
+    .header__top--region {
+      display: inline-block;
+      position: relative;
+      margin-left: 25px;
+      margin-top: 42px;
+      height: 26px;
+      background-image: url("../img/placeholder_icon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-left: 25px; }
+      .header__top--region--box {
+        width: 135px;
+        border: 1px solid #555;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        background-color: transparent;
+        color: #818181;
+        font-family: "Calibri Light";
+        font-size: 14px;
+        padding-left: 10px; }
+        .header__top--region--box:focus {
+          outline: none; }
+    .header__top--service {
+      display: inline-block;
+      position: relative;
+      margin-left: 60px;
+      margin-top: 42px;
+      height: 26px;
+      padding-left: 25px;
+      background-image: url("../img/ignition_icon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: Calibri;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 26px; }
+      .header__top--service:hover {
+        color: #ff6b00;
+        text-decoration: none; }
+      .header__top--service:after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 49px;
+        background-image: url("../img/deliver_line.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        right: -25px;
+        top: -13px; }
   .header__logo {
     position: relative;
     float: left;
-    margin-left: 16%;
+    margin-left: 10%;
     margin-top: 34px; }
   .header__registratin {
     position: relative;
@@ -146,8 +254,8 @@ body, html {
     right: -23px;
     top: -13px; }
   .header__enter {
+    display: inline-block;
     position: relative;
-    float: left;
     margin-top: 50px;
     margin-left: 36px;
     color: #e85902;
@@ -155,14 +263,25 @@ body, html {
     font-size: 14px;
     font-weight: 300;
     text-decoration: none;
-    line-height: 22px; }
-    .header__enter img {
-      position: absolute;
-      top: 0px;
-      left: 50px; }
+    line-height: 22px;
+    padding-right: 35px;
+    background-image: url("../img/login_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 41px; }
     .header__enter:hover {
       color: #e85902;
       text-decoration: none; }
+  .header__exit {
+    display: inline-block;
+    position: absolute;
+    top: 43px;
+    margin-left: 45px;
+    width: 31px;
+    height: 26px;
+    background-image: url("../img/logout_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
   .header__slider {
     position: relative;
     width: 100%;
@@ -380,3 +499,19 @@ body, html {
     background-repeat: no-repeat;
     left: 0px;
     top: 0px; }
+
+@media only screen and (max-width: 1930px) {
+  .header__logo {
+    margin-left: 22%; } }
+
+@media only screen and (max-width: 1690px) {
+  .header__logo {
+    margin-left: 18%; } }
+
+@media only screen and (max-width: 1450px) {
+  .header__logo {
+    margin-left: 13%; } }
+
+@media only screen and (max-width: 1390px) {
+  .header__logo {
+    margin-left: 10%; } }

@@ -1,1 +1,23 @@
-@import "_promo";
+@media only screen and (max-width: 1930px) {
+  .header__logo {
+    margin-left: 22%;
+  }
+}
+
+@media only screen and (max-width: 1690px) {
+  .header__logo {
+    margin-left: 18%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .header__logo {
+    margin-left: 13%;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .header__logo {
+    margin-left: 10%;
+  }
+}
